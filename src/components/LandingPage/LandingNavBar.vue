@@ -8,7 +8,7 @@
                     <a href="#">Pronóstico</a>
                     <a href="#">Tratamiento</a>
                     <a href="#">I+D+i</a>
-                    <RouterLink @click="closeMenu" to="/EscuelaFamilias">Escuela de familias</RouterLink>
+                    <RouterLink to="/EscuelaFamilias">Escuela de familias</RouterLink>
                     <a href="#">Eventos</a>
                     <a href="#">El equipo</a>
                 </div>
