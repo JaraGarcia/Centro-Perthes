@@ -1,4 +1,15 @@
 <template>
+  <div>
+
+  <h2>RESERVA TU CITA</h2>
+
+<!-- Principio del widget integrado de Calendly -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/ci-perthes/reserva-cita?hide_event_type_details=1&background_color=f4f4f4&text_color=0e1929&primary_color=2b4f82" style="min-width:320px;height:630px;"></div>
+
+<!-- Final del widget integrado de Calendly -->
+
+    <button type="submit" @click="Calendly.initInlineWidget()">Escoger cita</button>
+  </div>
     <div class="article1">
       <form action="get">
         <h2>RESERVA TU CITA</h2>
@@ -14,8 +25,7 @@
         <label for="vehicle1"> Acepto recibir información comercial, incluso por correo electrónico.</label><br>
         <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
         <label for="vehicle2"> He leído y acepto la  <router-link to="/politica_privacidad" >Política de Privacidad </router-link></label><br>
-
-  </form>
+      </form>
     </div>
     <div class="article1">
             <h1> Reserva tu cita </h1>
@@ -27,6 +37,7 @@
 </template>
 
 <script>
+
 export default {
     name: 'LandingBookAppointment',
     
