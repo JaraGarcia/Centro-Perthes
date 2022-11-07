@@ -33,7 +33,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped> 
 
 .article1 {
       border: 8px solid #A3B5C0;
