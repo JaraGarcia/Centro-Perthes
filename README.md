@@ -13,7 +13,31 @@ Diagrama:
 
 
 
+## Backend server setup
 
+```
+cd backend
+```
+
+### Install backend packages
+```
+npm install
+```
+
+### Copy env variables
+- copy contents of `.env.example`
+- create a `.env` file
+- replace default data with correct mailchimp data in `.env` file
+
+
+### Run backend server
+```
+node index.js
+```
+
+
+
+--------------
 
 
 
