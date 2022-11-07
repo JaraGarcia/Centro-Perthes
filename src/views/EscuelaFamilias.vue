@@ -13,6 +13,7 @@ export default {
     EFsemaforo,
     EFform,
   },
+
 }
 
 </script>

@@ -5,9 +5,9 @@
         <div>
             <p>1. VALORACION CLINICA</p>
             <p>¿Sufre de dolor y cojera?</p>
-                <input type="radio" id="dolorCojeraSI" name="dolorCojera" value="dolorCojeraSI">
+                <input type="radio" id="dolorCojeraSI" name="dolorCojera" value="8" v-model="dolorCojeraSi">
                     <label for="dolorCojeraSI">Sí</label>
-                <input type="radio" id="dolorCojeraNO" name="dolorCojera" value="dolorCojeraNO">
+                <input type="radio" id="dolorCojeraNO" name="dolorCojera" value="dolorCojeraNO" v-model="dolorCojeraNo">
                     <label for="dolorCojeraNO">No</label>
 
             <p>Movilidad. ¿Tiene una apertura de menos de 30º?</p>
@@ -100,6 +100,19 @@
 <script>
 export default{
     name: 'EFsemaforo',
+    // data(){
+    //     return{
+    //     dolorCojeraSi: '',
+    //     dolorCojeraNo: '',
+    //     }
+    // },
+    // methods: {
+    //     // dolorCojera =>
+    //     //     if (this.dolorCojeraSi == '8'){
+
+    //     //     },
+    //     }
+    // }
 }
 </script>
 
