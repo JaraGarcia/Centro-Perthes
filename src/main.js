@@ -21,3 +21,38 @@ const router = createRouter({
 app.use(router)
 app.mount("#app");
 
+
+
+
+
+
+//MAILCHIMP PARA SUSCRIPCIONES. Visto en: https://github.com/johndatserakis/vue-mailchimp-email-signup-form/blob/develop/src/index.js
+
+//importar el componente vue relacionado con mailchimp
+import EFform from './components/EscuelaFamilias/EFsubscribeMailchimp.vue';
+
+//instalar la funcion ejecutada por VUE.js
+export function install(Vue) {
+	if (install.installed) return;
+	install.installed = true;
+	Vue.component('EFform', EFform);
+}EFform
+
+// Create module definition for Vue.use()
+const plugin = {
+	install,
+};
+
+// To auto-install when vue is found
+let GlobalVue = null;
+if (typeof window !== 'undefined') {
+	GlobalVue = window.Vue;
+} else if (typeof global !== 'undefined') {
+	GlobalVue = global.Vue;
+}
+if (GlobalVue) {
+	GlobalVue.use(plugin);
+}
+
+// To allow use as module (npm/webpack/etc.) export component
+export { EFform };

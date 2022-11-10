@@ -1,4 +1,5 @@
 <template >
+<<<<<<< HEAD
 
 <div id="container">
 
@@ -38,9 +39,9 @@
 </div>
  </template>
 
-
 <script>
 export default{
+
     name: 'CalendarGoogle',
 }
 </script>
@@ -102,9 +103,7 @@ ul{
      
 
  
-
+  
 </style>
 
-
-  
 

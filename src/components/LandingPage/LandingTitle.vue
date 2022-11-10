@@ -1,17 +1,20 @@
 <template>
     <header>
         <div>
-            <p> CENTRO INTERNACIONAL DEL PERTHES</p><br>
-        <div class="subtitle">
-            <p>pioneros en el tratamiento</p>
-        </div>
-        </div>
+            <p> CENTRO INTERNACIONAL DEL PERTHES</p>
+              <div class="subtitle">
+                  <p>pioneros en el tratamiento</p>
+              </div>
+            </div>
+      <RouterLink to="/" class="logo">
             <img src="@/assets/logo.png" alt="LOGO" />
+      </RouterLink>
     </header>
 </template>
 
 
 <script>
+
 export default{
     name: 'LandingTitle',
 }
@@ -25,8 +28,8 @@ header {
   justify-content: space-between;
   padding: 8px 0px;
 }
-header img {
-  width: 8%;
+header img{
+  width: 50px;
   height: auto;
   opacity: 0.7;
 }

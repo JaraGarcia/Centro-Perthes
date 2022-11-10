@@ -9,9 +9,8 @@
   
   <!-- footer -->
   <FooterPlace/>
-  
-  
-  
+  <CalendarGoogle/>
+ 
   </template>
 
 
@@ -27,10 +26,13 @@ export default {
   components: {
     LandingTitle,
     LandingNavBar,
+<<<<<<< HEAD
     AppoimentForm,
     CalendarGoogle,
     FooterPlace,
     AboutUs,
+=======
+>>>>>>> master
     
 },
 }
