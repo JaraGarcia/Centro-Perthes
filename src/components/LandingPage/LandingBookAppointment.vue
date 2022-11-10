@@ -4,7 +4,7 @@
   <h2>RESERVA TU CITA</h2>
 
   <!-- Principio del widget integrado de Calendly -->
-    <div class="calendly-inline-widget" data-url="https://calendly.com/ci-perthes/reserva-cita?hide_event_type_details=1&background_color=f4f4f4&text_color=0e1929&primary_color=1181c3" style="min-width:320px;height:630px;">
+    <div class="calendly-inline-widget" data-url="https://calendly.com/ci-perthes/reserva-cita?hide_event_type_details=1&background_color=f4f4f4&text_color=0e1929&primary_color=1181c3" style="min-width:320px;height:750px;">
     </div>
   <!-- Final del widget integrado de Calendly -->
 
