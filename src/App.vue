@@ -3,9 +3,14 @@
   <LandingTitle/>
   <LandingNavBar/>
     <router-view/>
+<AppoimentForm/>
+<CalendarGoogle/>
+<AboutUs/>
+  
   <!-- footer -->
   <FooterPlace/>
-  <CalendarGoogle/>
+  
+  
   
   </template>
 
@@ -13,14 +18,19 @@
 <script>
 import LandingTitle from './components/LandingPage/LandingTitle.vue';
 import LandingNavBar from './components/LandingPage/LandingNavBar.vue';
-
-
-
+import FooterPlace from  './components/FooterPlace.vue';
+import AppoimentForm from './components/AppoimentForm.vue';
+import CalendarGoogle from './components/CalendarGoogle.vue';
+import AboutUs from './components/AboutUs.vue'
 export default {
   name: 'App',
   components: {
     LandingTitle,
     LandingNavBar,
+    AppoimentForm,
+    CalendarGoogle,
+    FooterPlace,
+    AboutUs,
     
 },
 }
