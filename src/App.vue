@@ -8,7 +8,7 @@
   
   <!-- footer -->
   <FooterPlace/>
-  <CalendarGoogle/>
+  
  
   </template>
 
