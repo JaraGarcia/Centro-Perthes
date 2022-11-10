@@ -6,7 +6,7 @@ import FooterPlace from '../components/FooterPlace.vue'
 import CalendarGoogle from '../components/CalendarGoogle.vue'
 
 
-import FooterPlace from '../components/FooterPlace.vue'
+
 
 
 
@@ -18,10 +18,8 @@ export const routes=[
     {path: '/EscuelaFamilias', component:EscuelaFamilias},
     {path: '/politica_privacidad', component:PoliticaPrivacidad},
     {path: '/FooterPlace', component:FooterPlace},
-<<<<<<< HEAD
-    
-=======
+
     {path: '/CalendarGoogle', component:CalendarGoogle},
    
->>>>>>> master
+
 ]

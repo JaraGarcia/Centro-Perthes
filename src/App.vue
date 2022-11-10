@@ -2,10 +2,9 @@
 <template>
   <LandingTitle/>
   <LandingNavBar/>
-    <router-view/>
-<AppoimentForm/>
-<CalendarGoogle/>
-<AboutUs/>
+  <router-view/>
+  <CalendarGoogle/>
+  <AboutUs/>
   
   <!-- footer -->
   <FooterPlace/>
@@ -18,7 +17,6 @@
 import LandingTitle from './components/LandingPage/LandingTitle.vue';
 import LandingNavBar from './components/LandingPage/LandingNavBar.vue';
 import FooterPlace from  './components/FooterPlace.vue';
-import AppoimentForm from './components/AppoimentForm.vue';
 import CalendarGoogle from './components/CalendarGoogle.vue';
 import AboutUs from './components/AboutUs.vue'
 export default {
@@ -26,13 +24,10 @@ export default {
   components: {
     LandingTitle,
     LandingNavBar,
-<<<<<<< HEAD
-    AppoimentForm,
     CalendarGoogle,
     FooterPlace,
     AboutUs,
-=======
->>>>>>> master
+
     
 },
 }
