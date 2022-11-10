@@ -25,7 +25,7 @@
 import { http } from '@/plugins/axios'
 
 export default {
-    name: 'EFform',
+    name: 'EFsubscribeMailchimp',
     data () {
         return {
           email: ''

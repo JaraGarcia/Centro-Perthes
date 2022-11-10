@@ -2,7 +2,7 @@
       <nav>
         <div class="dropBtn">
             <button @click="toggleVisibility" class="dropBtn"> <ion-icon name="menu-outline"></ion-icon> </button>
-                <div v-if="isVisible" id="dropD" class="dropDwn-content" >
+                <div v-show="isVisible" id="dropD" class="dropDwn-content" >
                     <a href="#">Enfermedad de Perthes</a>  
                     <a href="#">Diagnóstico</a>
                     <a href="#">Pronóstico</a>
