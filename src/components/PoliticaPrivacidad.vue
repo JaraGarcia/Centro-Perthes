@@ -130,5 +130,8 @@
 
 export default {
     name:'PoliticaPrivacidad',
+
+
 }
+
 </script>

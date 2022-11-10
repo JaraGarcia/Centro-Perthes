@@ -4,7 +4,10 @@
   <LandingNavBar/>
     <router-view/>
   <!-- footer -->
-</template>
+  <FooterPlace/>
+  <CalendarGoogle/>
+  
+  </template>
 
 
 <script>
@@ -18,6 +21,7 @@ export default {
   components: {
     LandingTitle,
     LandingNavBar,
+    
 },
 }
 </script>
