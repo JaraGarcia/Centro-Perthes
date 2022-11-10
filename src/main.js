@@ -29,7 +29,7 @@ app.mount("#app");
 //MAILCHIMP PARA SUSCRIPCIONES. Visto en: https://github.com/johndatserakis/vue-mailchimp-email-signup-form/blob/develop/src/index.js
 
 //importar el componente vue relacionado con mailchimp
-import EFform from './components/EscuelaFamilias/EFform.vue';
+import EFform from './components/EscuelaFamilias/EFsubscribeMailchimp.vue';
 
 //instalar la funcion ejecutada por VUE.js
 export function install(Vue) {

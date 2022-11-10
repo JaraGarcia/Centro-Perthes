@@ -1,17 +1,24 @@
 <template>
 <EFsemaforo/>
-<EFform/>
+<EFsubscribeMailchimp/>
+
+<hr>
+<EFborrador/>
+
 </template>
 
 
 <script>
 import EFsemaforo from '@/components/EscuelaFamilias/EFsemaforo.vue';
-import EFform from '../components/EscuelaFamilias/EFform.vue';
+import EFsubscribeMailchimp from '../components/EscuelaFamilias/EFsubscribeMailchimp.vue';
+import EFborrador from '../components/EscuelaFamilias/EFborrador.vue';
+
 export default {
   name: 'EscuelaFamilias',
   components: {
     EFsemaforo,
-    EFform,
+    EFsubscribeMailchimp,
+    EFborrador,
   },
 
 }
