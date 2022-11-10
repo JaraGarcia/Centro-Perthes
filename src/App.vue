@@ -2,22 +2,33 @@
 <template>
   <LandingTitle/>
   <LandingNavBar/>
-    <router-view/>
+  <router-view/>
+  <CalendarGoogle/>
+  <AboutUs/>
+  
   <!-- footer -->
-</template>
+  <FooterPlace/>
+  
+ 
+  </template>
 
 
 <script>
 import LandingTitle from './components/LandingPage/LandingTitle.vue';
 import LandingNavBar from './components/LandingPage/LandingNavBar.vue';
-
-
-
+import FooterPlace from  './components/FooterPlace.vue';
+import CalendarGoogle from './components/CalendarGoogle.vue';
+import AboutUs from './components/AboutUs.vue'
 export default {
   name: 'App',
   components: {
     LandingTitle,
     LandingNavBar,
+    CalendarGoogle,
+    FooterPlace,
+    AboutUs,
+
+    
 },
 }
 </script>
