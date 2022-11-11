@@ -2,13 +2,13 @@
       <nav>
         <div class="dropBtn">
             <button @click="toggleVisibility" class="dropBtn"> <ion-icon name="menu-outline"></ion-icon> </button>
-                <div v-if="isVisible" id="dropD" class="dropDwn-content" >
+                <div v-show="isVisible" id="dropD" class="dropDwn-content" >
                     <a href="#">Enfermedad de Perthes</a>  
                     <a href="#">Diagnóstico</a>
                     <a href="#">Pronóstico</a>
                     <a href="#">Tratamiento</a>
                     <a href="#">I+D+i</a>
-                    <RouterLink @click="closeMenu" to="/EscuelaFamilias">Escuela de familias</RouterLink>
+                    <RouterLink to="/EscuelaFamilias">Escuela de familias</RouterLink>
                     <a href="#">Eventos</a>
                     <a href="#">El equipo</a>
                 </div>

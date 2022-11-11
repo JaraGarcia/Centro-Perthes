@@ -170,11 +170,11 @@ export default {
             this.totalPoints = 0;
         }
     }
-}
 
 </script>
 
 <style scoped>
+
 form,
 .response {
     display: block;
@@ -229,5 +229,4 @@ button {
     padding: 1rem 2.5rem;
     border-radius: 10rem;
     font-size: 1.3rem;
-}
 </style>

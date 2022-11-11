@@ -7,7 +7,6 @@ Diagrama:
     1.1 Título + logo 
     2.2 barra de navegación con enlaces
 2. Main: Componentes 
-    2.1
         
 3. Footer: Reserva tu cita
 

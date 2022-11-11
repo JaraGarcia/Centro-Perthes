@@ -28,7 +28,7 @@ app.get('/member-count', async (req, res) => {
 app.post('/add-member', async (req, res) => {
     const data = req.body
 
-    const response = await client.lists.addListMember(MailList, data);
+    await client.lists.addListMember(MailList, data);
 
     res.status(200).json({ data: 'success' });
 });
@@ -37,3 +37,4 @@ const port = process.env.PORT || 4000;
 app.listen(port, () => {
     console.log(`listening on ${port}`);
 });
+
