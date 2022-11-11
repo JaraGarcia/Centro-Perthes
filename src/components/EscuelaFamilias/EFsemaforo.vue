@@ -20,12 +20,13 @@
                 </div>
                 <br>
                 <h5 for="movilidad">Movilidad. ¿Tiene una apertura de menos de 30º?</h5>
+                <!-- añadir explicación o gráfico -->
                 <div class="">
-                    <input class="option" type="radio" name="movilidad" id="movilidadSi" value="5">
+                    <input class="option" type="radio" name="movilidad" id="movilidadSi" value="8">
                     <label for="movilidadSi">Sí</label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="movilidad" id="movilidadNo" value="2">
+                    <input class="option" type="radio" name="movilidad" id="movilidadNo" value="0">
                     <label for="movilidadNo">No</label>
                 </div>
             </div>
@@ -33,23 +34,23 @@
             <div>
                 <h5 for="edadInicio">Edad de inicio de la enfermedad</h5>
                 <div class="">
-                    <input class="option" type="radio" name="edadInicio" id="edadInicio0a4" value="1">
+                    <input class="option" type="radio" name="edadInicio" id="edadInicio0a4" value="0">
                     <label for="edadInicio0a4">Menos de 4 años</label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="edadInicio" id="edadInicio4a6" value="2">
+                    <input class="option" type="radio" name="edadInicio" id="edadInicio4a6" value="5">
                     <label for="edadInicio4a6">De 4 a 6 años</label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="edadInicio" id="edadInicio6a8" value="3">
+                    <input class="option" type="radio" name="edadInicio" id="edadInicio6a8" value="10">
                     <label for="edadInicio6a8">De 6 a 8 años</label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="edadInicio" id="edadInicio8a10" value="4">
+                    <input class="option" type="radio" name="edadInicio" id="edadInicio8a10" value="40">
                     <label for="edadInicio8a10">De 8 a 10 años</label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="edadInicio" id="edadInicio10+" value="25">
+                    <input class="option" type="radio" name="edadInicio" id="edadInicio10+" value="70">
                     <label for="edadInicio10+">Más de 10 años</label>
                 </div>
             </div>
@@ -61,19 +62,19 @@
             <div>
                 <h4>OVALIZACION</h4>
                 <div class="">
-                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion1" value="1">
+                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion1" value="0">
                     <label for="ovalizacion1"><img src="@/assets/img/cadera.png" alt=""></label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion2" value="2">
+                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion2" value="10">
                     <label for="ovalizacion2"><img src="@/assets/img/cadera.png" alt=""></label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion3" value="3">
+                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion3" value="20">
                     <label for="ovalizacion3"><img src="@/assets/img/cadera.png" alt=""></label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion4" value="14">
+                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion4" value="60">
                     <label for="ovalizacion4"><img src="@/assets/img/cadera.png" alt=""></label>
                 </div>
             </div>
@@ -81,15 +82,15 @@
             <div>
                 <h4>APLASTAMIENTO</h4>
                 <div class="">
-                    <input class="option" type="radio" name="aplastamiento" id="aplastamiento1" value="1">
+                    <input class="option" type="radio" name="aplastamiento" id="aplastamiento1" value="0">
                     <label for="aplastamiento1"><img src="@/assets/img/cadera.png" alt=""></label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="aplastamiento" id="aplastamiento2" value="2">
+                    <input class="option" type="radio" name="aplastamiento" id="aplastamiento2" value="20">
                     <label for="aplastamiento2"><img src="@/assets/img/cadera.png" alt=""></label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="aplastamiento" id="aplastamiento3" value="13">
+                    <input class="option" type="radio" name="aplastamiento" id="aplastamiento3" value="30">
                     <label for="aplastamiento3"><img src="@/assets/img/cadera.png" alt=""></label>
                 </div>
             </div>
@@ -98,7 +99,7 @@
                 <h4>SUBLUXACION</h4>
                 <p for="subluxacion"><img src="@/assets/img/cadera.png" alt=""></p>
                 <div class="">
-                    <input class="option" type="radio" name="subluxacion" id="subluxacionSi" value="8">
+                    <input class="option" type="radio" name="subluxacion" id="subluxacionSi" value="30">
                     <label for="subluxacionSi">Sí</label>
                 </div>
                 <div class="">
@@ -109,7 +110,7 @@
                 <h4>SIGNO DE CAGE</h4>
                 <p for="cage"><img src="@/assets/img/cadera.png" alt=""></p>
                 <div class="">
-                    <input class="option" type="radio" name="cage" id="cageSi" value="8">
+                    <input class="option" type="radio" name="cage" id="cageSi" value="5">
                     <label for="cageSi">Sí</label>
                 </div>
                 <div class="">
