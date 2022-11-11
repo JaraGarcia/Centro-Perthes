@@ -1,177 +1,232 @@
 <template>
-    
-    <h3>Semaforo del Perthes</h3>
+
+    <form id="form">
+
+        <h1>Semáforo del Perthes</h1>
         <h5>El semáforo es orientativo. Para consejo individualizado llámanos.</h5>
 
-    <p>1. VALORACION CLINICA</p>
-    <form>
+        <h3>1. VALORACION CLINICA</h3>
 
-        <label for="dolorCojera">¿Sufre de dolor y cojera?</label>     
-                <button value="8" @click.prevent="pointsPlusOne()">Sí</button>
-                <button value="0">No</button>
-       
-
-        <p>Movilidad. ¿Tiene una apertura de menos de 30º?</p>
-        <input type="radio" id="aperturaSI" name="apertura" v-model="aperturaCadera">
-            <label for="aperturaSI" @click="plusPoints">Sí</label>
-        <input type="radio" id="aperturaNO" name="apertura" :value="0">
-            <label for="aperturaNO">No</label>
-
-        <p>Edad de inicio de la enfermedad</p>
-        <input type="radio" id="cuatro" name="inicioEnfermedad" value="cuatro">
-            <label for="cuatro">Menos de 4 años</label>
-        <input type="radio" id="cuatroSeis" name="inicioEnfermedad" value="cuatroSeis">
-            <label for="cuatroSeis">De 4 a 6 años</label>
-        <input type="radio" id="seisOcho" name="inicioEnfermedad" value="seisOcho">
-            <label for="seisOcho">De 6 a 8 años</label>
-        <input type="radio" id="ochoDiez" name="inicioEnfermedad" value="ochoDiez">
-            <label for="ochoDiez">De 8 a 10 años</label>
-        <input type="radio" id="diez" name="inicioEnfermedad" value="diez">
-            <label for="diez">Más de 10 años</label> 
-    
-
-
-        <div class="newForm">
-        <p>2. VALORACION RADIOLÓGICA</p>
-        <br><p>OVALIZACION</p>
-        <div class="answer">
-        <label for="ovalizacion">Imagen 1
-        <input type="radio" id="ovalizacionUno" name="ovalizacion" value="ovalizacionUno" >
-        <img src="@/assets/img/cadera.png" alt="ovalizacion" name="ovalizacion" value="ovalizacionUno" />
-        </label>
-
-        <label for="ovalizacion">Imagen 2
-        <input type="radio" id="ovalizacionDos" name="ovalizacion" value="ovalizacionDos" >
-        <img src="@/assets/img/cadera.png" alt="ovalizacion" name="ovalizacion" value="ovalizacionDos" />
-        </label>
-
-        <label for="ovalizacion">Imagen 3
-        <input type="radio" id="ovalizacionTres" name="ovalizacion" value="ovalizacionTres" >
-        <img src="@/assets/img/cadera.png" alt="ovalizacion" name="ovalizacion" value="ovalizacionTres" />
-        </label>
-
-        <label for="ovalizacion">Imagen 4
-        <input type="radio" id="ovalizacionCuatro" name="ovalizacion" value="ovalizacionCuatro" >
-        <img src="@/assets/img/cadera.png" alt="ovalizacion" name="ovalizacion" value="ovalizacionCuatro" />
-        </label>
+        <div class="flex-container">
+            <div>
+                <h5 for="dolorCojera">¿Sufre de dolor y cojera?</h5>
+                <div class="">
+                    <input class="option" type="radio" name="dolorCojera" id="dolorCojeraSi" value="8">
+                    <label for="dolorCojeraSi">Sí</label>
+                </div>
+                <div class="">
+                    <input class="option" type="radio" name="dolorCojera" id="dolorCojeraNo" value="0">
+                    <label for="dolorCojeraNo">No</label>
+                </div>
+                <br>
+                <h5 for="movilidad">Movilidad. ¿Tiene una apertura de menos de 30º?</h5>
+                <div class="">
+                    <input class="option" type="radio" name="movilidad" id="movilidadSi" value="5">
+                    <label for="movilidadSi">Sí</label>
+                </div>
+                <div class="">
+                    <input class="option" type="radio" name="movilidad" id="movilidadNo" value="2">
+                    <label for="movilidadNo">No</label>
+                </div>
+            </div>
+            <br>
+            <div>
+                <h5 for="edadInicio">Edad de inicio de la enfermedad</h5>
+                <div class="">
+                    <input class="option" type="radio" name="edadInicio" id="edadInicio0a4" value="1">
+                    <label for="edadInicio0a4">Menos de 4 años</label>
+                </div>
+                <div class="">
+                    <input class="option" type="radio" name="edadInicio" id="edadInicio4a6" value="2">
+                    <label for="edadInicio4a6">De 4 a 6 años</label>
+                </div>
+                <div class="">
+                    <input class="option" type="radio" name="edadInicio" id="edadInicio6a8" value="3">
+                    <label for="edadInicio6a8">De 6 a 8 años</label>
+                </div>
+                <div class="">
+                    <input class="option" type="radio" name="edadInicio" id="edadInicio8a10" value="4">
+                    <label for="edadInicio8a10">De 8 a 10 años</label>
+                </div>
+                <div class="">
+                    <input class="option" type="radio" name="edadInicio" id="edadInicio10+" value="25">
+                    <label for="edadInicio10+">Más de 10 años</label>
+                </div>
+            </div>
         </div>
-        <br><br><p>SUBLUXACION</p>
-        <img src="@/assets/img/cadera.png" alt="subluxacion" />
-        <div class="answer">
-        <input type="radio" id="subluxacionSI" name="subluxacion" value="subluxacionSI">
-            <label for="subluxacionSI">Sí</label>
-        <input type="radio" id="subluxacionNO" name="subluxacion" value="subluxacionNO">
-            <label for="subluxacionNO">No</label>
-        </div>
-        <br><br><p>APLASTAMIENTO</p>
-        <div class="answer">
-        <label for="aplastamiento">Imagen 1
-        <input type="radio" id="aplastamientoUno" name="aplastamiento" value="aplastamientoUno" >
-        <img src="@/assets/img/cadera.png" alt="aplastamiento" name="aplastamiento" value="aplastamientoUno" />
-        </label>
 
-        <label for="aplastamiento">Imagen 2
-        <input type="radio" id="aplastamientoDos" name="aplastamiento" value="aplastamientoDos" >
-        <img src="@/assets/img/cadera.png" alt="aplastamiento" name="aplastamiento" value="aplastamientoDos" />
-        </label>
+        <h3>2. VALORACION RADIOLÓGICA</h3>
 
-        <label for="aplastamiento">Imagen 3
-        <input type="radio" id="aplastamientoTres" name="aplastamiento" value="aplastamientoTres" >
-        <img src="@/assets/img/cadera.png" alt="aplastamiento" name="aplastamiento" value="aplastamientoTres" />
-        </label>
-        </div>
-        <br><br><p>SIGNO DE CAGE</p>
-        <img src="@/assets/img/cadera.png" alt="cage" />
-        <div class="answer">
-        <input type="radio" id="cageSI" name="cage" value="cageSI">
-            <label for="cageSI">Sí</label>
-        <input type="radio" id="cageNO" name="cage" value="cageNO">
-            <label for="cageNO">No</label>
-        </div>
-        </div>
-        <h5>Las respuestas recogidas en el test indican que la cadera</h5>
+        <div class="flex-container">
+            <div>
+                <h4>OVALIZACION</h4>
+                <div class="">
+                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion1" value="1">
+                    <label for="ovalizacion1"><img src="@/assets/img/cadera.png" alt=""></label>
+                </div>
+                <div class="">
+                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion2" value="2">
+                    <label for="ovalizacion2"><img src="@/assets/img/cadera.png" alt=""></label>
+                </div>
+                <div class="">
+                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion3" value="3">
+                    <label for="ovalizacion3"><img src="@/assets/img/cadera.png" alt=""></label>
+                </div>
+                <div class="">
+                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion4" value="14">
+                    <label for="ovalizacion4"><img src="@/assets/img/cadera.png" alt=""></label>
+                </div>
+            </div>
 
-        <p>No tiene riesgo actual</p>
-        <p>Presenta síntomas de evolución de riesgo</p>
-        <p>Presenta necesidad de corrección</p> 
-        <button @click.prevent="submit()">SUBMIT</button>
+            <div>
+                <h4>APLASTAMIENTO</h4>
+                <div class="">
+                    <input class="option" type="radio" name="aplastamiento" id="aplastamiento1" value="1">
+                    <label for="aplastamiento1"><img src="@/assets/img/cadera.png" alt=""></label>
+                </div>
+                <div class="">
+                    <input class="option" type="radio" name="aplastamiento" id="aplastamiento2" value="2">
+                    <label for="aplastamiento2"><img src="@/assets/img/cadera.png" alt=""></label>
+                </div>
+                <div class="">
+                    <input class="option" type="radio" name="aplastamiento" id="aplastamiento3" value="13">
+                    <label for="aplastamiento3"><img src="@/assets/img/cadera.png" alt=""></label>
+                </div>
+            </div>
+
+            <div>
+                <h4>SUBLUXACION</h4>
+                <p for="subluxacion"><img src="@/assets/img/cadera.png" alt=""></p>
+                <div class="">
+                    <input class="option" type="radio" name="subluxacion" id="subluxacionSi" value="8">
+                    <label for="subluxacionSi">Sí</label>
+                </div>
+                <div class="">
+                    <input class="option" type="radio" name="subluxacion" id="subluxacionNo" value="0">
+                    <label for="subluxacionNo">No</label>
+                </div>
+
+                <h4>SIGNO DE CAGE</h4>
+                <p for="cage"><img src="@/assets/img/cadera.png" alt=""></p>
+                <div class="">
+                    <input class="option" type="radio" name="cage" id="cageSi" value="8">
+                    <label for="cageSi">Sí</label>
+                </div>
+                <div class="">
+                    <input class="option" type="radio" name="cage" id="cageNo" value="0">
+                    <label for="cageNo">No</label>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" @click.prevent="showResult()">Ver resultado</button>
+
     </form>
+
+    <div class="response">
+        <h4 id="answer" class="answer"></h4>
+        <img src="" id="image">
+    </div>
+
 </template>
+
 <script>
 
-export default{
-    name:'EFsemaforo',
+export default {
+    name: 'EFsemaforo',
 
-    data(){
-        return{
-            points: 0,
+    data() {
+        return {
+            pointsValue: document.getElementsByClassName("option"),
+            totalPoints: 0,
+            answer: "",
+            image: ""
         }
     },
     methods: {
-        pointsPlusOne(){
-            this.points = this.points +1
-            console.log(this.points)
-        },
-        pointsPlusTwo(){
-            this.points = this.points +2
-        },
+        showResult() {
+            for (let i = 0; i < this.pointsValue.length; i++) {
+                if (this.pointsValue[i].checked == true) {
+                    this.totalPoints += Number(this.pointsValue[i].value);
+                    console.log(this.pointsValue);
+                    this.pointsValue[i].checked = false;
+                }
+            }
 
-        submit(){
-            console.log(this.points)
+            if (this.totalPoints < 35) {
+                this.answer = "no tiene riesgo actual.";
+                this.image = "greenLight.png";
+            } else if (this.totalPoints > 55) {
+                this.answer = "presenta necesidad de corrección.";
+                this.image = "redLight.png";
+            } else {
+                this.answer = "presenta síntomas de evolución de riesgo.";
+                this.image = "orangeLight.png";
+            }
+
+            document.getElementById("answer").innerHTML = `Las respuestas recogidas en el test indican que la cadera ${this.answer}`;
+            document.getElementById("image").src = `../../assets/img/trafficLights/${this.image}`;
+
+            this.totalPoints = 0;
         }
-
-    },
-    
-}
+    }
 
 </script>
 
 <style scoped>
-form{
-    display: flex;
-    flex-direction: column;
-    margin: 10px 15px 30px;
-    gap: 10px;
-    text-align: left;
-}
 
-label {
-	display: flex;
-	cursor: pointer;
-	position: relative;
-    margin-left: 50px;
-	margin-bottom: 0.4em;
-}
-input {
-    position: absolute;
-	margin-top: 5px;
-    margin-left: 20px;
-}
-
-img{
-    width: 200px;
-}
-
-.newForm{
-    position: relative;
-	margin-top: 5px;
-    margin-left: 2px;
-}
-
-.newForm input{
-    
-    position: relative;
-    margin-left: 0px;
-}
-
-.newForm label{
+form,
+.response {
     display: block;
-    position: relative;
-    margin-left: 10px;
+    width: 80%;
+    margin: auto;
 }
 
-.answer{
-    display: flex;
-    flex-wrap: wrap;
+form,
+h3,
+button {
+    margin-top: 3rem;
 }
+
+h3 {
+    margin-bottom: 2rem;
+}
+
+h4 {
+    margin-top: 2rem;
+}
+
+h6 {
+    font-size: 1.7rem;
+}
+
+.flex-container {
+    display: flex;
+    column-gap: 3rem;
+}
+
+img {
+    width: 200px;
+    margin: 0.5rem;
+}
+
+label,
+.option {
+    font-size: 1.2rem;
+    margin-left: 0.6rem;
+}
+
+.response>h4 {
+    margin: 2rem 0;
+}
+
+.response>img {
+    display: flex;
+    justify-self: center;
+}
+
+button {
+    padding: 1rem 2.5rem;
+    border-radius: 10rem;
+    font-size: 1.3rem;
 </style>
