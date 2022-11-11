@@ -3,7 +3,7 @@
 <div id="container">
 
 
-  <div class="container text-center" style="width:1200px">
+  <div class="container text-center">
   <div class="row">
     
     <div class="col-3"  >
@@ -51,7 +51,7 @@ export default{
 
 #container {
   
-  width: 900;
+  width: 1000;
   height: 700px;
         background-image:url(" https://www.vescom.com/images/news/m2460/19534_0.jpg?10150");
        background-repeat: no repeat;
@@ -71,7 +71,7 @@ export default{
     height: 100px;
     text-align: center;
     box-sizing: content-box;
-    border-radius: 50px;
+    
 
 }
 
@@ -79,8 +79,9 @@ export default{
 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   
-    background: rgb(163,181,192);
-    background: linear-gradient(90deg, rgba(163,181,192,1) 0%, rgba(163,181,192,1) 47%, rgba(0,212,255,1) 100%);
+    background:#A3B5C0 ;
+    
+    
     border-color: rgb(109, 121, 252);
     margin: 10px;
     font-size:16 px;

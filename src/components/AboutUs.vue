@@ -49,19 +49,17 @@ export default {
   text-align: justify;
     width: 1000px;    
     height: 550px;
-    background: rgb(163,181,192);
-    background: linear-gradient(90deg, rgba(163,181,192,1) 0%, rgba(163,181,192,1) 47%, rgba(0,212,255,1) 100%);
-    border-color: rgb(109, 121, 252);
+    background: #A3B5C0;
     margin: 10px;
     padding-block: 10px;
     font-size: 10px;
-    font:oblique bold 120% cursive;color:slategray
-
+    font:oblique bold 120% cursive;color:slategray;
+    
+    
 }
 
 div{
-    margin: 35px;
-    border-radius:10%;
+    margin: 30px;
     width: 1000px;
 
     }

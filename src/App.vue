@@ -5,8 +5,7 @@
   <router-view/>
   <CalendarGoogle/>
   <AboutUs/>
-  
-  <!-- footer -->
+    <!-- footer -->
   <FooterPlace/>
   
  
