@@ -95,20 +95,24 @@
 
         </div>
     </div>
+    <EFsemaforo></EFsemaforo>
 </template>
 
 
 <script>
+import EFsemaforo from '../components/EscuelaFamilias/EFsemaforo.vue';
+
 export default {
-  name: 'EscuelaFamilias',
-  data(){
-    return {
-        nombre: '',
-        apellidos:'',
-        edad: '',
-        carnet:''
-    }
-  }
+    name: "EscuelaFamilias",
+    data() {
+        return {
+            nombre: "",
+            apellidos: "",
+            edad: "",
+            carnet: ""
+        };
+    },
+    components: { EFsemaforo }
 }
 
 </script>
