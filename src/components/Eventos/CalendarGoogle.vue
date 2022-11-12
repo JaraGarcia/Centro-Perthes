@@ -9,10 +9,10 @@
     <div class="col-3"  >
       <div class >  <ul class="rss" style="width:400px ;height: 350px;text-align: left;">
       
-      <li>Asfape  <a href="https://asfape.org/" target="_blank" ><img src="../assets/img/LOGOASFAPE.png"  alt="LOGOASFAPE" width="70" height="70"/> </a> </li>
-      <li>Hospital infantil Niño Jesús  <a href="https://www.comunidad.madrid/hospital/ninojesus" target="_blank" >  <img src="../assets/img/LOGOHOSJESUS2.png" alt="LOGOHOSTJESUS" width="120" height="60"/></a> </li>
-      <li>IRF La Salle  <a href="https://www.irflasalle.es/" target="_blank"> <img src="../assets/img/LOGOIRFLASALLE2.png" alt="LOGOIRFLASALLE" width="50" height="50"/></a> </li>
-      <li>SECOT  <a href="https://www.secot.es/" target="_blank" > <img src="../assets/img/LOGOSECOT3.png" alt="LOGOSECOT" width="80" height="80"/></a> </li>
+      <li>Asfape  <a href="https://asfape.org/" target="_blank" ><img src="@/assets/img/LOGOASFAPE.png"  alt="LOGOASFAPE" width="70" height="70"/> </a> </li>
+      <li>Hospital infantil Niño Jesús  <a href="https://www.comunidad.madrid/hospital/ninojesus" target="_blank" >  <img src="@/assets/img/LOGOHOSJESUS2.png" alt="LOGOHOSTJESUS" width="120" height="60"/></a> </li>
+      <li>IRF La Salle  <a href="https://www.irflasalle.es/" target="_blank"> <img src="@/assets/img/LOGOIRFLASALLE2.png" alt="LOGOIRFLASALLE" width="50" height="50"/></a> </li>
+      <li>SECOT  <a href="https://www.secot.es/" target="_blank" > <img src="@/assets/img/LOGOSECOT3.png" alt="LOGOSECOT" width="80" height="80"/></a> </li>
       <li>Haz click en cada logo para tener mas información ➦</li>
     </ul></div>
     
@@ -47,7 +47,7 @@ export default{
 
 
 
-<style>
+<style scoped>
 
 #container {
   

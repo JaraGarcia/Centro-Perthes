@@ -9,8 +9,8 @@
                     <a href="#">Tratamiento</a>
                     <a href="#">I+D+i</a>
                     <RouterLink to="/EscuelaFamilias">Escuela de familias</RouterLink>
-                    <a href="#">Eventos</a>
-                    <a href="#">El equipo</a>
+                    <RouterLink to="/Eventos">Eventos</RouterLink>
+                    <RouterLink to="/AboutUs">El equipo</RouterLink>
                 </div>
                 <div class="outsideClick">
                 </div>
