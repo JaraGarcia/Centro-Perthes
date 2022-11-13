@@ -14,7 +14,13 @@
   </div>
 
   <!-- SUSTITUIR POR COMPONENT FOOTER -->
-  
+  <div class="article1">
+          <h1> Reserva tu cita </h1>
+          <p> A través de: 
+              Teléfono +34 633 33 33 33</p>
+          <p> Escribenos al correo electrónico: <br>
+              centronacionalperthes@gmail.com</p>
+  </div>
 </template>
 
 <script>
