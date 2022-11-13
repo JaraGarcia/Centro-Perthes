@@ -20,17 +20,25 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/member-count', async (req, res) => {
-    const data = await client.lists.getListMembersInfo(MailList)
+    try {
+        const data = await client.lists.getListMembersInfo(MailList)
 
-    res.json({ count: data.total_items });
+        res.json({ count: data.total_items });
+    } catch (e) {
+        res.status(500).json({error: e})
+    }
 });
 
 app.post('/add-member', async (req, res) => {
     const data = req.body
 
-    await client.lists.addListMember(MailList, data);
+    try {
+        await client.lists.addListMember(MailList, data);
 
-    res.status(200).json({ data: 'success' });
+        res.status(200).json({ data: 'success' });
+    } catch(e) {
+    res.status(500).json({error: e})
+    }
 });
 
 const port = process.env.PORT || 4000;

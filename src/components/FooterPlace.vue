@@ -23,24 +23,24 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 
 
 
  h8{
-    color: rgb(27, 21, 21);
-    text-align:center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-color: rgb(35, 35, 187);
-    padding: 10px;
+        color: rgb(27, 21, 21);
+        text-align:center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-color: rgb(35, 35, 187);
+        padding: 10px;
     position:absolute;
     margin:  auto;
     background: #A3B5C0;
-    
-    border: 15px solid rgba(50,50,50,0.3);
-    width:1000px;
+    background-image: linear-gradient(top, #191919,#000000);
+    border: 10px solid rgba(50,50,50,0.3);
+    width:100%;
     clear:both;
-    margin-bottom: 0px;
+    margin-top: 0px;
     padding-top: 1px;
     overflow: visible;
     font-size: 18px;

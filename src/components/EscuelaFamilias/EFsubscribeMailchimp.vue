@@ -1,6 +1,6 @@
 <template>
 <div>
-  <p>Si quieres estar al día de la información sobre nuestra clínica suscríbete a nuestra newsletter</p>
+  <h5>Si quieres estar al día de la información sobre nuestra clínica suscríbete a nuestra newsletter</h5>
   <input
             type="email"
             v-model="email"
@@ -16,6 +16,7 @@
               Subscribe
             </button>
           </div>
+          <p v-if="isSubscribed">Te has suscrito exitosamente!</p>
   </div>
 </template>
 
@@ -28,16 +29,19 @@ export default {
     name: 'EFsubscribeMailchimp',
     data () {
         return {
-          email: ''
+          email: '',
+          isSubscribed: false
         }
     },
     methods: {
       submit: async function () {
-        const {data} = await http.post('/add-member', {
+        const {status} = await http.post('/add-member', {
           email_address: this.email,
           status: 'subscribed'
         })
-        console.log(data)
+        if(status === 200) {
+          this.isSubscribed = true
+        }
       }
     }
 }
@@ -45,9 +49,15 @@ export default {
 </script>
 <style scoped>
 
+*{
+  margin: 1vw 5vw;
+}
+
+h5{
+  margin-top: 7vw;
+}
 
 input{
-  margin: 5px;
   width: 200px;
 }
 
@@ -72,7 +82,7 @@ button {
   width: 200px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 0px;
 }
 
 </style>

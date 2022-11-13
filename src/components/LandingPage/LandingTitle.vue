@@ -29,7 +29,7 @@ header {
   padding: 8px 0px;
 }
 header img{
-  width: 50px;
+  width: 6vw;
   height: auto;
   opacity: 0.7;
 }
