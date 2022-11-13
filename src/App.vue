@@ -5,8 +5,7 @@
   <router-view/>
   <CalendarGoogle/>
   <AboutUs/>
-  
-  <!-- footer -->
+    <!-- footer -->
   <FooterPlace/>
   
  
@@ -25,9 +24,8 @@ export default {
     LandingTitle,
     LandingNavBar,
     CalendarGoogle,
-    FooterPlace,
     AboutUs,
-
+    FooterPlace,
     
 },
 }
