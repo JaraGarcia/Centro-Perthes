@@ -3,24 +3,24 @@
         <div class="dropBtn">
             <button @click="toggleVisibility" class="dropBtn"> <ion-icon name="menu-outline"></ion-icon> </button>
                 <div v-show="isVisible" id="dropD" class="dropDwn-content" >
-                    <a href="#">Enfermedad de Perthes</a>  
-                    <a href="#">Diagnóstico</a>
-                    <a href="#">Pronóstico</a>
-                    <a href="#">Tratamiento</a>
+                  <RouterLink class="dropBtn" to="/Enfermedad_Perthes">Enfermedad del Perthes ➤</RouterLink>
+                  <div class="dropDwn-content doublenav">  
+                    <RouterLink to="/diagnostico">Diagnóstico</RouterLink>
+                    <RouterLink to="/pronostico">Pronóstico</RouterLink>
+                    <RouterLink to="/tratamiento">Tratamiento</RouterLink>
+                  </div>
                     <a href="#">I+D+i</a>
                     <RouterLink to="/EscuelaFamilias">Escuela de familias</RouterLink>
                     <RouterLink to="/Eventos">Eventos</RouterLink>
                     <RouterLink to="/AboutUs">El equipo</RouterLink>
                 </div>
-                <div class="outsideClick">
-                </div>
-            </div>
+        </div>
                 <ul class="rrss">
-                <li><a href="mailto:perthes.cip@gmail.com" target="_blank"> <ion-icon name="mail-outline"></ion-icon> </a> </li>
-                <li><a href="tel:+34683331024"> <ion-icon name="call-outline"></ion-icon> </a> </li>
-                <li><a href="https://twitter.com/centrodeperthes" target="_blank"> <ion-icon name="logo-twitter"></ion-icon> </a> </li>
-                <li><a href="#" target="_blank"> <ion-icon name="logo-linkedin"></ion-icon> </a> </li>
-            </ul>
+                  <li><a href="mailto:perthes.cip@gmail.com" target="_blank"> <ion-icon name="mail-outline"></ion-icon> </a> </li>
+                  <li><a href="tel:+34683331024"> <ion-icon name="call-outline"></ion-icon> </a> </li>
+                  <li><a href="https://twitter.com/centrodeperthes" target="_blank"> <ion-icon name="logo-twitter"></ion-icon> </a> </li>
+                  <li><a href="#" target="_blank"> <ion-icon name="logo-linkedin"></ion-icon> </a> </li>
+              </ul>
     </nav>
 </template>
 
@@ -108,13 +108,9 @@ nav .dropBtn .dropDwn-content a:hover {
   background-color: #ddd;
 }
 
-/* .outsideClick{
-  position: fixed;
-  inset: 0%;
-  z-index: -10;
-  width: 100%;
-  height: 100%;
-} 
+.doublenav{
+  margin-left: 300px;
+  margin-top: -40px;
+}
 
-Intento de click fuera del menu para cerrarlo, no funciona*/
 </style>

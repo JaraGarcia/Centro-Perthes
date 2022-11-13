@@ -22,7 +22,7 @@ export default {
   components: {
     LandingTitle,
     LandingNavBar,
-    FooterPlace,
+    FooterPlace, 
 },
 }
 </script>

@@ -21,11 +21,11 @@
                 <br>
                 <h5 for="movilidad">Movilidad. ¿Tiene una apertura de menos de 30º?</h5>
                 <div class="">
-                    <input class="option" type="radio" name="movilidad" id="movilidadSi" value="5">
+                    <input class="option" type="radio" name="movilidad" id="movilidadSi" value="8">
                     <label for="movilidadSi">Sí</label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="movilidad" id="movilidadNo" value="2">
+                    <input class="option" type="radio" name="movilidad" id="movilidadNo" value="0">
                     <label for="movilidadNo">No</label>
                 </div>
             </div>
@@ -37,19 +37,19 @@
                     <label for="edadInicio0a4">Menos de 4 años</label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="edadInicio" id="edadInicio4a6" value="2">
+                    <input class="option" type="radio" name="edadInicio" id="edadInicio4a6" value="5">
                     <label for="edadInicio4a6">De 4 a 6 años</label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="edadInicio" id="edadInicio6a8" value="3">
+                    <input class="option" type="radio" name="edadInicio" id="edadInicio6a8" value="10">
                     <label for="edadInicio6a8">De 6 a 8 años</label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="edadInicio" id="edadInicio8a10" value="4">
+                    <input class="option" type="radio" name="edadInicio" id="edadInicio8a10" value="40">
                     <label for="edadInicio8a10">De 8 a 10 años</label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="edadInicio" id="edadInicio10+" value="25">
+                    <input class="option" type="radio" name="edadInicio" id="edadInicio10+" value="70">
                     <label for="edadInicio10+">Más de 10 años</label>
                 </div>
             </div>
@@ -60,21 +60,14 @@
         <div class="flex-container">
             <div>
                 <h4>OVALIZACION</h4>
+                <p for="ovalizacion"> <img src="@/assets/img/EFfotosSemaforo/EFOVALIZACION.png" alt=""></p>
                 <div class="">
-                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion1" value="1">
-                    <label for="ovalizacion1"><img src="@/assets/img/cadera.png" alt=""></label>
+                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion3" value="10">
+                    <label for="ovalizacion3">Sí</label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion2" value="2">
-                    <label for="ovalizacion2"><img src="@/assets/img/cadera.png" alt=""></label>
-                </div>
-                <div class="">
-                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion3" value="3">
-                    <label for="ovalizacion3"><img src="@/assets/img/cadera.png" alt=""></label>
-                </div>
-                <div class="">
-                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion4" value="14">
-                    <label for="ovalizacion4"><img src="@/assets/img/cadera.png" alt=""></label>
+                    <input class="option" type="radio" name="ovalizacion" id="ovalizacion4" value="60">
+                    <label for="ovalizacion4">No</label>
                 </div>
             </div>
 
@@ -82,38 +75,38 @@
                 <h4>APLASTAMIENTO</h4>
                 <div class="">
                     <input class="option" type="radio" name="aplastamiento" id="aplastamiento1" value="1">
-                    <label for="aplastamiento1"><img src="@/assets/img/cadera.png" alt=""></label>
+                    <label for="aplastamiento1"><img src="@/assets/img/EFfotosSemaforo/EFHerringA.png" alt=""></label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="aplastamiento" id="aplastamiento2" value="2">
-                    <label for="aplastamiento2"><img src="@/assets/img/cadera.png" alt=""></label>
+                    <input class="option" type="radio" name="aplastamiento" id="aplastamiento2" value="20">
+                    <label for="aplastamiento2"><img src="@/assets/img/EFfotosSemaforo/EFHerringB.png" alt=""></label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="aplastamiento" id="aplastamiento3" value="13">
-                    <label for="aplastamiento3"><img src="@/assets/img/cadera.png" alt=""></label>
+                    <input class="option" type="radio" name="aplastamiento" id="aplastamiento3" value="30">
+                    <label for="aplastamiento3"><img src="@/assets/img/EFfotosSemaforo/EFHerringC.png" alt=""></label>
                 </div>
             </div>
 
             <div>
                 <h4>SUBLUXACION</h4>
-                <p for="subluxacion"><img src="@/assets/img/cadera.png" alt=""></p>
+                <p for="subluxacion"><img src="@/assets/img/EFfotosSemaforo/EFSubluxacion.png" alt=""></p>
                 <div class="">
-                    <input class="option" type="radio" name="subluxacion" id="subluxacionSi" value="8">
+                    <input class="option" type="radio" name="subluxacion" id="subluxacionSi" value="30">
                     <label for="subluxacionSi">Sí</label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="subluxacion" id="subluxacionNo" value="0">
+                    <input class="option" type="radio" name="subluxacion" id="subluxacionNo" value="1">
                     <label for="subluxacionNo">No</label>
                 </div>
 
                 <h4>SIGNO DE CAGE</h4>
-                <p for="cage"><img src="@/assets/img/cadera.png" alt=""></p>
+                <p for="cage"><img src="@/assets/img/EFfotosSemaforo/EFSignoCage.png" alt=""></p>
                 <div class="">
-                    <input class="option" type="radio" name="cage" id="cageSi" value="8">
+                    <input class="option" type="radio" name="cage" id="cageSi" value="5">
                     <label for="cageSi">Sí</label>
                 </div>
                 <div class="">
-                    <input class="option" type="radio" name="cage" id="cageNo" value="0">
+                    <input class="option" type="radio" name="cage" id="cageNo" value="1">
                     <label for="cageNo">No</label>
                 </div>
             </div>
@@ -123,9 +116,11 @@
 
     </form>
 
-    <div class="response">
-        <h4 id="answer" class="answer"></h4>
-        <img src="" id="image">
+    <div v-if="isSubmit" class="response">
+        <h4 id="answer" class="answer">Las respuestas recogidas en el test indican que la cadera {{totalPoints >= 55 ? 'presenta síntomas de evolución de riesgo.' : totalPoints >= 35 && totalPoints < 55 ? 'no tiene riesgo actual' : 'no tiene riesgo actual.'}}</h4>
+        <img v-if="totalPoints <= 35" src="../../assets/img/trafficLights/greenLight.png" id="image">
+        <img v-if="totalPoints > 35 && totalPoints < 55" src="../../assets/img/trafficLights/orangeLight.png" id="image">
+        <img v-if="totalPoints >= 55" src="../../assets/img/trafficLights/redLight.png" id="image"/>
     </div>
 
 </template>
@@ -139,35 +134,23 @@ export default {
         return {
             pointsValue: document.getElementsByClassName("option"),
             totalPoints: 0,
+            isSubmit: false,
             answer: "",
             image: ""
         }
     },
     methods: {
         showResult() {
+            this.totalPoints = 0;
+            
             for (let i = 0; i < this.pointsValue.length; i++) {
                 if (this.pointsValue[i].checked == true) {
                     this.totalPoints += Number(this.pointsValue[i].value);
-                    console.log(this.pointsValue);
                     this.pointsValue[i].checked = false;
                 }
             }
 
-            if (this.totalPoints < 35) {
-                this.answer = "no tiene riesgo actual.";
-                this.image = "greenLight.png";
-            } else if (this.totalPoints > 55) {
-                this.answer = "presenta necesidad de corrección.";
-                this.image = "redLight.png";
-            } else {
-                this.answer = "presenta síntomas de evolución de riesgo.";
-                this.image = "orangeLight.png";
-            }
-
-            document.getElementById("answer").innerHTML = `Las respuestas recogidas en el test indican que la cadera ${this.answer}`;
-            document.getElementById("image").src = `../../assets/img/trafficLights/${this.image}`;
-
-            this.totalPoints = 0;
+            this.isSubmit = true;
         }
     }
 }

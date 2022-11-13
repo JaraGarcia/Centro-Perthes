@@ -1,0 +1,39 @@
+<template>
+    <h1>TRATAMIENTO</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas 
+        similique neque inventore dignissimos veniam. Perferendis, similique? 
+        Architecto et temporibus inventore quidem, error consequatur laboriosam 
+        id fuga illum. Est, iste suscipit.</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas 
+        similique neque inventore dignissimos veniam. Perferendis, similique? 
+        Architecto et temporibus inventore quidem, error consequatur laboriosam 
+        id fuga illum. Est, iste suscipit.</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas 
+        similique neque inventore dignissimos veniam. Perferendis, similique? 
+        Architecto et temporibus inventore quidem, error consequatur laboriosam 
+        id fuga illum. Est, iste suscipit.</p>
+        
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas 
+        similique neque inventore dignissimos veniam. Perferendis, similique? 
+        Architecto et temporibus inventore quidem, error consequatur laboriosam 
+        id fuga illum. Est, iste suscipit.</p>
+
+
+</template>
+
+<script>
+
+
+export default{
+    name: 'EPtratamiento',
+}
+</script>
+
+<style scoped>
+*{
+    margin: 6vw;
+}
+
+</style>
