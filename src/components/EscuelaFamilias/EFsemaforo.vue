@@ -3,22 +3,23 @@
     <form id="form">
 
         <h1>Semáforo del Perthes</h1>
-        <h5>El semáforo es orientativo. Para consejo individualizado llámanos.</h5>
+        <h5>El semáforo es orientativo. Para consejo individualizado llámenos.</h5>
 
         <h3>1. VALORACION CLINICA</h3>
 
         <div class="flex-container">
-            <div>
+            <section class="section1">
                 <h5 for="dolorCojera">¿Sufre de dolor y cojera?</h5>
-                <div class="">
-                    <input class="option" type="radio" name="dolorCojera" id="dolorCojeraSi" value="8">
+                <div class="column">
+                    <input class="option" type="radio" name="dolorCojera" id="dolorCojeraSi" value="8" required>
                     <label for="dolorCojeraSi">Sí</label>
                 </div>
-                <div class="">
+                <div class="column">
                     <input class="option" type="radio" name="dolorCojera" id="dolorCojeraNo" value="0">
                     <label for="dolorCojeraNo">No</label>
                 </div>
-                <br>
+            </section>
+            <section class="section1">
                 <h5 for="movilidad">Movilidad. ¿Tiene una apertura de menos de 30º?</h5>
                 <div class="">
                     <input class="option" type="radio" name="movilidad" id="movilidadSi" value="8">
@@ -28,12 +29,11 @@
                     <input class="option" type="radio" name="movilidad" id="movilidadNo" value="0">
                     <label for="movilidadNo">No</label>
                 </div>
-            </div>
-            <br>
-            <div>
+            </section>
+            <section class="section1">
                 <h5 for="edadInicio">Edad de inicio de la enfermedad</h5>
-                <div class="">
-                    <input class="option" type="radio" name="edadInicio" id="edadInicio0a4" value="1">
+                <div class="column">
+                    <input class="option" type="radio" name="edadInicio" id="edadInicio0a4" value="0" required>
                     <label for="edadInicio0a4">Menos de 4 años</label>
                 </div>
                 <div class="">
@@ -52,13 +52,13 @@
                     <input class="option" type="radio" name="edadInicio" id="edadInicio10+" value="70">
                     <label for="edadInicio10+">Más de 10 años</label>
                 </div>
-            </div>
+            </section>
         </div>
 
-        <h3>2. VALORACION RADIOLÓGICA</h3>
+        <h3>2. VALORACION RADIOLOGICA</h3>
 
         <div class="flex-container">
-            <div>
+            <section class="section2">
                 <h4>OVALIZACION</h4>
                 <p for="ovalizacion"> <img src="@/assets/img/EFfotosSemaforo/EFOVALIZACION.png" alt=""></p>
                 <div class="">
@@ -69,9 +69,9 @@
                     <input class="option" type="radio" name="ovalizacion" id="ovalizacion4" value="60">
                     <label for="ovalizacion4">No</label>
                 </div>
-            </div>
+            </section>
 
-            <div>
+            <section class="section2">
                 <h4>APLASTAMIENTO</h4>
                 <div class="">
                     <input class="option" type="radio" name="aplastamiento" id="aplastamiento1" value="1">
@@ -85,9 +85,9 @@
                     <input class="option" type="radio" name="aplastamiento" id="aplastamiento3" value="30">
                     <label for="aplastamiento3"><img src="@/assets/img/EFfotosSemaforo/EFHerringC.png" alt=""></label>
                 </div>
-            </div>
+            </section>
 
-            <div>
+            <section class="section2">
                 <h4>SUBLUXACION</h4>
                 <p for="subluxacion"><img src="@/assets/img/EFfotosSemaforo/EFSubluxacion.png" alt=""></p>
                 <div class="">
@@ -98,7 +98,9 @@
                     <input class="option" type="radio" name="subluxacion" id="subluxacionNo" value="1">
                     <label for="subluxacionNo">No</label>
                 </div>
+            </section>
 
+            <section class="section2">
                 <h4>SIGNO DE CAGE</h4>
                 <p for="cage"><img src="@/assets/img/EFfotosSemaforo/EFSignoCage.png" alt=""></p>
                 <div class="">
@@ -109,7 +111,13 @@
                     <input class="option" type="radio" name="cage" id="cageNo" value="1">
                     <label for="cageNo">No</label>
                 </div>
-            </div>
+            </section>
+
+        </div>
+
+        <div class="response">
+            <h4 id="answer"></h4>
+            <img :src='URLimage' id="image">
         </div>
 
         <button type="button" @click.prevent="showResult()">Ver resultado</button>
@@ -148,6 +156,7 @@ export default {
                     this.totalPoints += Number(this.pointsValue[i].value);
                     this.pointsValue[i].checked = false;
                 }
+                console.log(this.totalPoints);
             }
 
             this.isSubmit = true;
@@ -157,25 +166,73 @@ export default {
 </script>
 
 <style scoped>
-
-form,
-.response {
-    display: block;
-    width: 80%;
+form {
+    max-width: 90%;
     margin: auto;
 }
 
-form,
-h3,
-button {
-    margin-top: 3rem;
+.flex-container {
+    display: block;
+}
+
+@media (min-width: 1024px) {
+    .flex-container {
+        display: flex;
+        margin: 0;
+    }
+    .section1 {
+        margin-top: 0;
+    }
+}
+
+.section1 {
+    max-width: 300px;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    display: block;
+    justify-content: left;
+}
+
+.section2 {
+    min-width: 250px;
+    margin-right: 1rem;
+    display: inline-block;
+    justify-items: center;
+}
+
+.column {
+    margin: 0.6rem 0 0 ;
+    width: fit-content;
 }
 
 h3 {
-    margin-bottom: 2rem;
+    margin: 3rem 0 1.5rem;
 }
 
 h4 {
+    margin: 2rem 0 0.5rem;
+}
+
+/* input.ovalizacion,.aplastamiento {
+    appearance: none;
+} */
+
+input {
+    appearance: none;
+    font-size: 2rem;
+    color: red;
+}
+
+input.ovalizacion:checked,input.aplastamiento:checked {
+    border: 7px rgba(18, 59, 154, 0.754) solid;
+    border-radius: 5px;
+    
+}
+
+
+
+form,
+button {
     margin-top: 2rem;
 }
 
@@ -183,10 +240,7 @@ h6 {
     font-size: 1.7rem;
 }
 
-.flex-container {
-    display: flex;
-    column-gap: 3rem;
-}
+
 
 img {
     width: 200px;
@@ -212,5 +266,4 @@ button {
     padding: 1rem 2.5rem;
     border-radius: 10rem;
     font-size: 1.3rem;
-}
 </style>
