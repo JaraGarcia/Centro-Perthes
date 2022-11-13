@@ -213,12 +213,12 @@ h4 {
     margin: 2rem 0 0.5rem;
 }
 
-/* input.ovalizacion,.aplastamiento {
-    appearance: none;
-} */
+input.ovalizacion,.aplastamiento {
+    /* appearance: none; */
+}
 
 input {
-    appearance: none;
+    /* appearance: none; */
     font-size: 2rem;
     color: red;
 }
