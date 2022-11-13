@@ -24,8 +24,9 @@ export default {
     LandingTitle,
     LandingNavBar,
     CalendarGoogle,
-    AboutUs,
     FooterPlace,
+    AboutUs,
+
     
 },
 }
