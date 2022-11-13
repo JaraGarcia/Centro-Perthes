@@ -16,7 +16,7 @@
               Subscribe
             </button>
           </div>
-          <p v-if="isSubscribed">You have sucessfully subscribed!</p>
+          <p v-if="isSubscribed">Te has suscrito exitosamente!</p>
   </div>
 </template>
 
