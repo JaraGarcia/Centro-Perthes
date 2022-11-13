@@ -11,7 +11,6 @@
                     <RouterLink to="/EscuelaFamilias">Escuela de familias</RouterLink>
                     <a href="#">Eventos</a>
                     <a href="#">El equipo</a>
-                  
                 </div>
                 <div class="outsideClick">
                 </div>
