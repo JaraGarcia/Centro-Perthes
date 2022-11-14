@@ -3,7 +3,7 @@ Este proyecto sigue un modelo de acquitectura modular.
 Utiliza los lenguajes: Vue.js , html5, CSS3, 
 
 ## Diagrama
-
+![Diagrama](https://github.com/JaraGarcia/perthesclinica/blob/master/src/assets/estructura.png)
 
 
 ## Backend server setup
