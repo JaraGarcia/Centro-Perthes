@@ -1,19 +1,19 @@
 <template>
     <div class="containerfooter">
-        <div class="logofooter">
-         <img src="../assets/logo.png"  alt="logoclinica" width="50" height="50" />
-         <h6 >30 años de experiencia.</h6> <br>
-         <h6 >Miembros de :</h6>
-         <h6><a href="https://secipe.org/" target="_blank" >SECIPE</a></h6>
+        <div class="onefooter">
+             <h4>CENTRO INTERNACIONAL DEL PERTHES</h4>
+             <hr>
+             <ul>
+                <li><a href="mailto:perthes.cip@gmail.com" target="_blank"> <ion-icon name="mail-outline"></ion-icon> </a> Envíanos un correo a: perthes.cip@gmail.com </li>
+                <li><a href="tel:+34683331024"> <ion-icon name="call-outline"></ion-icon></a> Llámanos al 683 33 10 24</li>
+             </ul>
+             <p>CLÍNICA ONLINE DE REFERENCIA INTERNACIONAL</p>
          </div>
-         <div class="principal">
-         <h8> <h4>También puedes contactar con nosotros en:</h4>
-         Nuestro nº de teléfono 633.33.33.33: <a href="tel:63333333">:phone: Teléfono </a><br>
-         <p> Enviarnos un correo electrónico:
-         <a  href="mailto: indev.cip.perthes@gmail.com">click aqui:email:</a> </p>
-         <h7><router-link to="/politica_privacidad" >Política de Privacidad </router-link></h7>
-         <p>© year 2022 ,all rights reserved</p>
-         </h8>
+         <div class="twofooter">
+        <h4>CIP</h4>
+            <p>© Copyright 2023. Todos los derechos reservados. |
+                <router-link to="/politica_privacidad" >Política de Privacidad |</router-link></p>
+         
          </div>
     </div>
 </template>
@@ -23,45 +23,35 @@ export default {
 }
 </script>
 <style scoped>
-.containerfooter{
-    border:3px solid rgb(184, 161, 161);
-    width: 1000px;
-    width: 99.9%;
-    background-size:auto;
-    margin: auto ;
-    display: flex;
-    background:#A3B5C0 ;
+*{
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
+    line-height: 1.5;
 }
-.logofooter{
-    width: 20%;
-    height:auto;
-    min-height: 227px;
-    text-align:center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+.containerfooter{
+    display: block;
+}
+.containerfooter li{
+  margin: 10px;
+  list-style-type: none;
+  font-size: small;
+}
+
+.onefooter{
     padding: 10px;
-    margin:  auto;
-    border: 15px solid rgba(50,50,50,0.3);
-    clear:both;
-    padding-top: 10px;
-    overflow: hidden;
     font-size: 12px;
-    border-radius: 10%;
-    background:#A3B5C0 ;
+    background: #555;
+  
     }
-.principal{
-    width: 80%;
-    height: auto;
-    text-align:center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.twofooter{
     padding: 10px;
-    margin:  auto;
-    background: #A3B5C0;
-    border: 15px solid rgba(50,50,50,0.3);
-    clear:both;
-    padding-top: 10px;
-    overflow: hidden;
-    font-size: 18px;
-    border-radius: 1%;
-    background-color: rgb(151, 166, 190);
+    background: #333;
+    font-size: small;
     }
+
+.twofooter, a{
+    text-decoration: none;
+}
 </style>

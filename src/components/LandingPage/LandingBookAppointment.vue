@@ -8,31 +8,30 @@
     </div>
   <!-- Final del widget integrado de Calendly -->
 
-    <span>Más información sobre la </span><router-link to="/politica_privacidad" >Política de Privacidad</router-link>
-    
-
   </div>
 
 </template>
 
 <script>
-
 export default {
-    name: 'LandingBookAppointment',
-    
+  name: 'LandingBookAppointment',
 }
 </script>
 
+
 <style scoped> 
 
+h2{
+  color: hwb(215 17% 49%),
+}
 .article1 {
-      border: 8px solid #A3B5C0;
-      width: 80%;
-      height: auto;
-      margin: 70px;
-      text-align: center;
-      letter-spacing: 2px;
-      justify-content: center;
+  border: 8px solid #A3B5C0;
+  width: 80%;
+  height: auto;
+  margin: 70px;
+  text-align: center;
+  letter-spacing: 2px;
+  justify-content: center;
 
 }
 

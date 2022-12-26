@@ -9,10 +9,10 @@
                     <RouterLink to="/pronostico">Pronóstico</RouterLink>
                     <RouterLink to="/tratamiento">Tratamiento</RouterLink>
                   </div>
-                    <a href="#">I+D+i</a>
                     <RouterLink to="/EscuelaFamilias">Escuela de familias</RouterLink>
                     <RouterLink to="/Eventos">Eventos</RouterLink>
                     <RouterLink to="/AboutUs">El equipo</RouterLink>
+                    <a href="#">I+D+i</a>
                 </div>
         </div>
                 <ul class="rrss">

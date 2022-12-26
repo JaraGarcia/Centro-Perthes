@@ -38,4 +38,8 @@ export default {
   font-family: 'montserrat', sans-serif;
 }
 
+h1, h2, h3, h4 {
+  color: hwb(215 17% 49%);
+}
+
 </style>

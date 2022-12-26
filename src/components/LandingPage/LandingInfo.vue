@@ -3,7 +3,7 @@
     <div class="intro">
       <img  src="@/assets/img/famDoc.jpeg" alt="foto de familia">
         <div class="subtitle">
-            <h3 style="color: hwb(215 17% 49%);"> - 30 años de experiencia - </h3>
+            <h3> - 30 años de experiencia - </h3>
         </div>
     </div>
   
@@ -19,6 +19,7 @@ export default{
 
 
 <style>
+
 .intro {
   position: relative;
   justify-content: center;
