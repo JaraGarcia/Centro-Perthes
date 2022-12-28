@@ -12,7 +12,8 @@
                     <RouterLink to="/EscuelaFamilias">Escuela de familias</RouterLink>
                     <RouterLink to="/Eventos">Eventos</RouterLink>
                     <RouterLink to="/AboutUs">El equipo</RouterLink>
-                    <a href="#">I+D+i</a>
+                    <RouterLink to="/IDI">I+D+i</RouterLink>
+                    
                 </div>
         </div>
                 <ul class="rrss">
