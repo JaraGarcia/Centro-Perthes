@@ -10,12 +10,8 @@
     export default {
       name: 'IDI',
       components: {
-        IDIlanding,
-        }
+        IDIlanding
+        },
     }
     
     </script>
-
-<style>
-
-</style>

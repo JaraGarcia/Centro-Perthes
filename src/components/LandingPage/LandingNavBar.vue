@@ -20,7 +20,7 @@
                   <li><a href="mailto:perthes.cip@gmail.com" target="_blank"> <ion-icon name="mail-outline"></ion-icon> </a> </li>
                   <li><a href="tel:+34683331024"> <ion-icon name="call-outline"></ion-icon> </a> </li>
                   <li><a href="https://twitter.com/centrodeperthes" target="_blank"> <ion-icon name="logo-twitter"></ion-icon> </a> </li>
-                  <li><a href="#" target="_blank"> <ion-icon name="logo-linkedin"></ion-icon> </a> </li>
+                  <li><a href="https://www.linkedin.com/in/centro-internacional-del-perthes-b94124252/" target="_blank"> <ion-icon name="logo-linkedin"></ion-icon> </a> </li>
               </ul>
     </nav>
 </template>

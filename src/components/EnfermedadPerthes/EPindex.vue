@@ -42,7 +42,7 @@
 
 
 export default{
-    name: 'EPinex',
+    name: 'EPindex',
    
 }
 </script>

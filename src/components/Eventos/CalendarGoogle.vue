@@ -13,9 +13,9 @@
     <ul>
       
       <li> IPSG group </li>
-      <li>Asfape  <a href="https://asfape.org/" target="_blank" ><img src="../../assets/img/LOGOASFAPE.png"  alt="LOGOASFAPE" width="70" height="70"/> </a> </li>
-      <li>IRF La Salle  <a href="https://www.irflasalle.es/" target="_blank"> <img src="../../assets/img/LOGOIRFLASALLE2.png" alt="LOGOIRFLASALLE" width="50" height="50"/></a> </li>
-      <li>SECOT  <a href="https://www.secot.es/" target="_blank" > <img src="../../assets/img/LOGOSECOT3.png" alt="LOGOSECOT" width="80" height="80"/></a> </li>
+      <li>Asfape  <a href="https://asfape.org/" target="_blank" ><img src="#"  alt="LOGOASFAPE" > </a> </li>
+      <li>IRF La Salle  <a href="https://www.irflasalle.es/" target="_blank"> <img src="#" alt="LOGOIRFLASALLE" /></a> </li>
+      <li>SECOT  <a href="https://www.secot.es/" target="_blank" > <img src="#" alt="LOGOSECOT" /></a> </li>
       **   | ruber internacional | clinica Betanzos60  |  SEOP | EPOS | HOSPITAL UNIVERSITARIO SANCHINARRO HM <br>
 
       

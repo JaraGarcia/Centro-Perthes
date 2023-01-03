@@ -9,7 +9,9 @@ import PoliticaPrivacidad from '../components/PoliticaPrivacidad.vue';
 import FooterPlace from '../components/FooterPlace.vue';
 import Eventos from '../views/Eventos.vue';
 import AboutUs from '../views/AboutUs.vue';
-// import EFhealthcheck from '../components/EscuelaFamilias/EFhealthcheck.vue';
+import IDI from '../views/IDI.vue';
+import EFcheck from '../components/EscuelaFamilias/EFcheck.vue';
+
 
 
 
@@ -26,5 +28,6 @@ export const routes=[
     {path: '/FooterPlace', component:FooterPlace},
     {path: '/Eventos', component:Eventos},
     {path: '/AboutUs', component:AboutUs},
-    // {path: '/healthCheck', component:EFhealthcheck}
+    {path: '/IDI', component:IDI},
+    {path: '/healthCheck', component:EFcheck}
 ]

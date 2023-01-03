@@ -4,7 +4,7 @@
 
         <h1>Semáforo del Perthes</h1>
         <h5>Rellena el cuestionario para conocer el riesgo de tu cadera</h5>
-        <img src="" alt="">**Aquí la imagen del semaforo en horizontal**
+        
         <h3>1. VALORACION CLINICA</h3>
         **Añadir imagen de una valoracion clinica en ambas pregunta en el lado izquierdo.<br> 
         Que las preguntas vayan apareciendo segun van respondiendo**
@@ -129,9 +129,9 @@
 
     <div v-if="isSubmit" class="response">
         <h4 id="answer" class="answer">Las respuestas recogidas en el test indican que la cadera {{totalPoints >= 55 ? 'presenta síntomas de evolución de riesgo.' : totalPoints >= 35 && totalPoints < 55 ? 'no tiene riesgo actual' : 'no tiene riesgo actual.'}}</h4>
-        <img v-if="totalPoints <= 35" src="../../assets/img/trafficLights/greenLight.png" id="image">
-        <img v-if="totalPoints > 35 && totalPoints < 55" src="../../assets/img/trafficLights/orangeLight.png" id="image">
-        <img v-if="totalPoints >= 55" src="../../assets/img/trafficLights/redLight.png" id="image"/>
+        <img v-if="totalPoints <= 35" src="../../assets/lights/3.png" id="image">
+        <img v-if="totalPoints > 35 && totalPoints < 55" src="../../assets/lights/2.png" id="image">
+        <img v-if="totalPoints >= 55" src="../../assets/lights/1.png" id="image"/>
     </div>
     <h5>El semáforo es orientativo. Para consejo individualizado contacta con nosotros.</h5>
     <p>Para consejo individualizado pincha aquí <a href="mailto:perthes.cip@gmail.com" target="_blank"> <ion-icon name="mail-outline"></ion-icon> </a> *Icono más grande*</p>
@@ -157,6 +157,7 @@
 
 export default {
     name: 'EFsemaforo',
+    
 
     data() {
         return {

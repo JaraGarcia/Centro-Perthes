@@ -28,7 +28,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 *{
     margin-left: 6vw;
     margin-right: 6vw;
