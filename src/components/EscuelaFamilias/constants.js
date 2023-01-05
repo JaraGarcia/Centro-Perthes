@@ -1,5 +1,6 @@
 export const HealthForm = [
     {
+        src:'../../assets/lights/4.png',
         title: 'VALORACION CLINICA',
         subtitle: '¿Sufre de dolor y cojera?',
         options: [
@@ -60,7 +61,10 @@ export const HealthForm = [
         subtitle: 'OVALIZACION',
         options: [
             {
-                img: '',
+                src: '../../assets/img/EFfotosSemaforo/EFOVALIZACION.png',
+            },
+            {
+                title: 'Sí',
                 value: 8
             },
             {

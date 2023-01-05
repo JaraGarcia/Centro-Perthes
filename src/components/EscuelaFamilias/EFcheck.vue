@@ -2,15 +2,16 @@
   <div class="form">
     <h1>Semáforo del Perthes</h1>
         <h5>Rellena el cuestionario para conocer el riesgo de tu cadera</h5>
-        <img src="@/assets/lights/4.png" alt="semaforo"/>
-
+        
     <div class="formSteps">
       <div v-for="(_, index) in form" :class="['step', step >= index ? 'active' : '']" :key="index"></div>
     </div>
 
     <div>
+      <img> {{activeQuestion.src}}
       <h5>{{activeQuestion.title}}</h5>
       <p>{{activeQuestion.subtitle}}</p>
+      
       <ul class="options">
         <li @click="selectOption(index, option.value)" v-for="(option, index) in activeQuestion.options" :key="index">
           <div :class="['circle', answers.find(answer => answer.step === step && answer.index === index) ? 'fill' : '']"></div>
