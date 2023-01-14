@@ -12,28 +12,23 @@
         </ul>
 
 
-       <p style="font-weight: 600;">Cuando consultar al Traumatólogo Infantil</p>
+       <p class="subtitle">Cuando consultar al Traumatólogo Infantil</p>
        <p>Solicita una cita si tu hijo/a:</p>
        <ul>
             <li>Cojea</li>
             <li>Se queja de dolor en cadera, muslo y/o rodilla</li>
        </ul>
        
+       <button class="appointmentButton">SOLICITAR CITA</button>
+       
+       <p style="font-weight: 600;">Quiero saber más</p>
 
-       <p>**Solicita cita ahora</p>
 
+        <p class="select" @click="$router.push('diagnostico')">  DIAGNÓSTICO </p>
 
-        <button @click="$router.push('diagnostico')">
-            DIAGNÓSTICO
-        </button>
+        <p class="select" @click="$router.push('pronostico')">   PRONÓSTICO </p>
 
-        <button @click="$router.push('pronostico')">
-            PRONÓSTICO
-        </button>
-
-        <button @click="$router.push('tratamiento')">
-            TRATAMIENTO
-        </button>
+        <p class="select" @click="$router.push('tratamiento')">  TRATAMIENTO </p>
 
 
 </template>
@@ -65,10 +60,8 @@ p, li {
 
 
 
-button {
-  display: inline-block;
+.select {
   border-radius: 4px;
-  background-color: #A3B5C0;;
   border: none;
   color: hwb(215 17% 49%);
   text-align: center;

@@ -8,7 +8,7 @@
     </div>
 
     <div>
-      <img> {{activeQuestion.src}}
+      <img :src ='activeQuestion.image' />
       <h5>{{activeQuestion.title}}</h5>
       <p>{{activeQuestion.subtitle}}</p>
       

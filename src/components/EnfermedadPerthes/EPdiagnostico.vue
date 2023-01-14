@@ -10,7 +10,7 @@
         <p>Las alteraciones dela cadera en las imagenes pueden tardar unas semanas en aparecer. Es probable que se recomiende repetir alguna prueba.</p>
         <p>Atención sin distancias, solicita una cita ahora.</p>
         <br>
-<p>FASES DE LA ENFERMEDAD</p>
+<p class="subtitle">Fases de la enfermedad</p>
 <p>Necrosis. Inicio dolor y cojera</p>
 <p>Fragmentación. Dolor y cojera más intensos</p>
 <p>Reosificación. Dolor y cojera más esporádicos</p>
