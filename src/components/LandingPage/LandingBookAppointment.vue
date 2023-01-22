@@ -1,12 +1,13 @@
 <template>
-  <div>
+  <div class="margen">
 
-  <h2>RESERVA TU CITA</h2>
+    <h2>RESERVA TU CITA</h2>
+    <sub>REFRESCA LA PÁGINA SI NO VES EL CALENDARIO</sub>
 
-  <!-- Principio del widget integrado de Calendly -->
-    <div class="calendly-inline-widget" data-url="https://calendly.com/ci-perthes/reserva-cita?hide_event_type_details=1&background_color=f4f4f4&text_color=0e1929&primary_color=1181c3" style="min-width:320px;height:750px;">
-    </div>
-  <!-- Final del widget integrado de Calendly -->
+    <!-- Principio del widget integrado de Calendly -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/ci-perthes/reserva-cita?hide_event_type_details=1&background_color=f4f4f4&text_color=0e1929&primary_color=1181c3" style="min-width:320px;height:750px;">
+      </div>
+    <!-- Final del widget integrado de Calendly -->
 
   </div>
 
@@ -48,5 +49,8 @@ input {
 
 input:focus {
   border: 3px solid hwb(215 17% 49%);
+}
+.margen{
+  margin: 0px 20px;
 }
 </style>

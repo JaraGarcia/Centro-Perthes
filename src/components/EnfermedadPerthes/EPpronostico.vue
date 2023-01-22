@@ -11,7 +11,8 @@
     <p>Cuanto antes inicie el tratamiento mayor probabilidad de curación con una forma normal de la articulación de la cadera.</p>
     <br>
     <p>Factores como sobrepeso, trombofilia o hipotiroidismo, pueden provocar peor pronóstico. Solicita cita a la Unidad de Diagnóstico Avanzado</p>
-<!-- Añadir un nota que diga en construcción -->
+
+    <nav><ion-icon name="construct-outline"></ion-icon> <p class="small">Estamos trabajando para entregarle más novedades pronto. Gracias por contar con nosotros.</p></nav>
 
 </template>
 
@@ -35,8 +36,24 @@ h1{
 p, li {
     line-height: 1.8rem;
     line-height: 2;
-    font-size: larger;
+    font-size: large;
     word-wrap: break-word;
 }
 
+nav{
+    justify-content: center;
+}
+.small{
+    font-size: medium;
+    padding: 10px;
+    margin: 0px;
+    font-weight: 600;
+    color: hwb(215 17% 49%);
+}
+
+ion-icon{
+    font-size: xx-large;
+    color: hwb(215 17% 49%);
+    margin: 0px;
+}
 </style>

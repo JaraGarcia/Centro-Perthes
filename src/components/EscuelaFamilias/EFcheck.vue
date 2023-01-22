@@ -11,19 +11,34 @@
       <img :src ='activeQuestion.image' />
       <h5>{{activeQuestion.title}}</h5>
       <p>{{activeQuestion.subtitle}}</p>
+     
+      
       
       <ul class="options">
+       
         <li @click="selectOption(index, option.value)" v-for="(option, index) in activeQuestion.options" :key="index">
           <div :class="['circle', answers.find(answer => answer.step === step && answer.index === index) ? 'fill' : '']"></div>
           <p>{{option.title}}</p>
+          <img :src ='option.image' />
         </li>
       </ul>
     </div>
     <div class="actions">
-      <button @click="decrementStep" v-if="step > 0" class="back button">Back</button>
-      <button class="button" @click="incrementStep" :disabled="!answers[step]">{{step === form.length - 1 ? 'Submit' : 'Next' }}</button>
+      <button @click="decrementStep" v-if="step > 0" class="back button">Anterior</button>
+      <button class="button" @click="incrementStep" :disabled="!answers[step]">{{step === form.length - 1 ? 'Ver resultado' : 'Siguiente' }}</button>
     </div>
   </div>
+
+  <div class="response">
+            <h4 id="answer"></h4>
+            <img :src='URLimage' id="image">
+  </div>
+  <div v-if="isSubmit" class="response">
+        <h4 id="answer" class="answer">Las respuestas recogidas en el test indican que la cadera {{totalPoints >= 55 ? 'presenta síntomas de evolución de riesgo.' : totalPoints >= 35 && totalPoints < 55 ? 'no tiene riesgo actual' : 'no tiene riesgo actual.'}}</h4>
+        <img v-if="totalPoints <= 35" src="../../assets/lights/3.png" id="image">
+        <img v-if="totalPoints > 35 && totalPoints < 55" src="../../assets/lights/2.png" id="image">
+        <img v-if="totalPoints >= 55" src="../../assets/lights/1.png" id="image"/>
+    </div>
 </template>
 
 <script>
@@ -61,9 +76,11 @@ export default {
     }
   }
 }
+
 </script>
 
 <style scoped>
+
 .form {
   max-width: 750px;
   margin-left: 10%;
@@ -105,8 +122,9 @@ export default {
 .actions {
   display: flex;
   width: 100%;
-  padding: 0 10px;
-  justify-content: flex-end;
+  padding: 5px 10px;
+  justify-content: space-between;
+  margin-right: 2rem;
 }
 .back {
   margin-right: 10px
@@ -115,6 +133,7 @@ export default {
 form,
 button {
     margin-top: 2rem;
+
 }
 
 h6 {

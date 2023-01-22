@@ -51,13 +51,13 @@ h1, h2, h3, h4 {
   box-shadow: 20px 20px 50px grey;
   color: hwb(215 17% 49%);
   text-align: center;
+  margin-left: 200px;
   padding: 10px;
   width: 300px;
   cursor: pointer;
-  margin: 4vw 8vw 4vw 8vw; 
   font-weight: 900;
   transition: all 0.5s;
-  
+ 
 }
 
 </style>

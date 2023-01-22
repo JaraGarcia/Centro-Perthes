@@ -16,8 +16,10 @@
 <p>Reosificación. Dolor y cojera más esporádicos</p>
 <p>Remodelación. Sin síntomas</p>
 <br>
-<p>Valora el riesgo de tu cadera en el Semáforo del Perthes **Link a escuela de familias**</p>
-<!-- Incluir boton para direccionar al semaforo del perthes -->
+<p class="subtitle">Valora el riesgo de tu cadera en el Semáforo del Perthes</p>
+<div>
+<button class="appointmentButton" @click="$router.push('EscuelaFamilias')">IR AL TEST</button>
+</div>
 
 </template>
 
@@ -44,6 +46,8 @@ p, li {
     font-size: larger;
     word-wrap: break-word;
 }
-
+div{
+    margin: 5%;
+}
 
 </style>

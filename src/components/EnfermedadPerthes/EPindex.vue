@@ -1,5 +1,4 @@
 <template>
-    
     <h1>Enfermedad de Perthes</h1>
         <p>Es una necrosis o infarto de la cabeza del fémur que afecta a la cadera de las niñas y niños en crecimiento.</p>
         <p>Se produce una interrupción temporal de la llegada de la sangre a la cabeza femoral, provoca la muerte celular y el colapso del hueso de la cabeza femoral, que pierde su forma esférica.</p>
@@ -18,18 +17,18 @@
             <li>Cojea</li>
             <li>Se queja de dolor en cadera, muslo y/o rodilla</li>
        </ul>
-       
-       <button class="appointmentButton">SOLICITAR CITA</button>
-       
-       <p style="font-weight: 600;">Quiero saber más</p>
+       <div>
+       <button class="appointmentButton" @click="$router.push('/')">SOLICITAR CITA</button>
+        </div>
+       <h1 style="font-weight: 600;">Quiero saber más</h1>
 
+        <nav>
+            <p class="select" @click="$router.push('diagnostico')">  DIAGNÓSTICO </p>
 
-        <p class="select" @click="$router.push('diagnostico')">  DIAGNÓSTICO </p>
+            <p class="select" @click="$router.push('pronostico')">   PRONÓSTICO </p>
 
-        <p class="select" @click="$router.push('pronostico')">   PRONÓSTICO </p>
-
-        <p class="select" @click="$router.push('tratamiento')">  TRATAMIENTO </p>
-
+            <p class="select" @click="$router.push('tratamiento')">  TRATAMIENTO </p>
+        </nav>
 
 </template>
 
@@ -54,11 +53,9 @@ h1{
 p, li {
     line-height: 1.8rem;
     line-height: 2;
-    font-size: larger;
-    word-wrap: break-word;
+    font-size: 600;
+    margin-top: 23.18px;
 }
-
-
 
 .select {
   border-radius: 4px;
@@ -73,4 +70,8 @@ p, li {
   font-weight: 900;
   
 }
+div{
+    margin: 10%;
+}
+
 </style>

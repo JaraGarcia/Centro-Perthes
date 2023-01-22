@@ -1,6 +1,14 @@
 export const HealthForm = [
     {
         image:require('../../assets/lights/4.png'),
+        options: [
+            {
+                title: 'Este test no sustituye opinión médica',
+            }
+            
+        ]
+    },
+    {
         title: 'VALORACION CLINICA',
         subtitle: '¿Sufre de dolor y cojera?',
         options: [
@@ -59,10 +67,8 @@ export const HealthForm = [
     {
         title: 'VALORACION RADIOLOGICA',
         subtitle: 'OVALIZACION',
+        image:require('../../assets/img/EFfotosSemaforo/EFOVALIZACION.png'),
         options: [
-            {
-                image: '../../assets/img/EFfotosSemaforo/EFOVALIZACION.png',
-            },
             {
                 title: 'Sí',
                 value: 8
@@ -73,4 +79,53 @@ export const HealthForm = [
             }
         ]
     },
+    {
+        title: '',
+        subtitle: 'APLASTAMIENTO',
+        options: [
+            {
+                image:require('../../assets/img/EFfotosSemaforo/EFHerringA.png'),
+                value: 1
+            },
+            {
+                image:require('../../assets/img/EFfotosSemaforo/EFHerringB.png'),
+                value: 20
+            },
+            {
+                image:require('../../assets/img/EFfotosSemaforo/EFHerringC.png'),
+                value: 30
+            },
+        ]
+    },
+    {
+        title: '',
+        subtitle: 'SUBLUXACION',
+        image:require('../../assets/img/EFfotosSemaforo/EFSubluxacion.png'),
+        options: [
+            {
+                title: 'Sí',
+                value: 30
+            },
+            {
+                title: 'No',
+                value: 1
+            }
+        ]
+    },
+    {
+        title: '',
+        subtitle: 'SIGNO DE GAGE',
+        image:require('../../assets/img/EFfotosSemaforo/EFSignoCage.png'),
+        options: [
+            {
+                title: 'Sí',
+                value: 5
+            },
+            {
+                title: 'No',
+                value: 1
+            }
+        ]
+    },
+    
 ]
