@@ -7,7 +7,7 @@
                 <li><a href="mailto:perthes.cip@gmail.com" target="_blank"> <ion-icon name="mail-outline"></ion-icon> </a> Envíanos un correo a: perthes.cip@gmail.com </li>
                 <li><a href="tel:+34683331024"> <ion-icon name="call-outline"></ion-icon></a> Llámanos al 683 33 10 24</li>
              </ul>
-             <p>CLÍNICA ONLINE DE REFERENCIA INTERNACIONAL</p>
+             <p>CENTRO DE EXCELENCIA EN LA ENFERMEDAD DE PERTHES</p>
          </div>
          <div class="twofooter">
         <h4>CIP</h4>
