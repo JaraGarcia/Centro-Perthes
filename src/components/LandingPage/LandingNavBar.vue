@@ -9,17 +9,18 @@
                     <RouterLink to="/pronostico">Pronóstico</RouterLink>
                     <RouterLink to="/tratamiento">Tratamiento</RouterLink>
                   </div>
-                    <a href="#">I+D+i</a>
                     <RouterLink to="/EscuelaFamilias">Escuela de familias</RouterLink>
                     <RouterLink to="/Eventos">Eventos</RouterLink>
                     <RouterLink to="/AboutUs">El equipo</RouterLink>
+                    <RouterLink to="/IDI">I+D+i</RouterLink>
+                    
                 </div>
         </div>
                 <ul class="rrss">
                   <li><a href="mailto:perthes.cip@gmail.com" target="_blank"> <ion-icon name="mail-outline"></ion-icon> </a> </li>
                   <li><a href="tel:+34683331024"> <ion-icon name="call-outline"></ion-icon> </a> </li>
                   <li><a href="https://twitter.com/centrodeperthes" target="_blank"> <ion-icon name="logo-twitter"></ion-icon> </a> </li>
-                  <li><a href="#" target="_blank"> <ion-icon name="logo-linkedin"></ion-icon> </a> </li>
+                  <li><a href="https://www.linkedin.com/in/centro-internacional-del-perthes-b94124252/" target="_blank"> <ion-icon name="logo-linkedin"></ion-icon> </a> </li>
               </ul>
     </nav>
 </template>

@@ -38,4 +38,26 @@ export default {
   font-family: 'montserrat', sans-serif;
 }
 
+h1, h2, h3, h4 {
+  color: hwb(215 17% 49%);
+}
+.subtitle{
+  font-weight: 600;
+}
+.appointmentButton{
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 20px 20px 50px grey;
+  color: hwb(215 17% 49%);
+  text-align: center;
+  margin-left: 200px;
+  padding: 10px;
+  width: 300px;
+  cursor: pointer;
+  font-weight: 900;
+  transition: all 0.5s;
+ 
+}
+
 </style>

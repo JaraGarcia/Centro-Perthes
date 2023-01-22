@@ -1,6 +1,6 @@
 <template>
 <div>
-  <h5>Si quieres estar al día de la información sobre nuestra clínica suscríbete a nuestra newsletter</h5>
+  <h5>Si quieres estar al día suscríbete a nuestra newsletter</h5>
   <input
             type="email"
             v-model="email"

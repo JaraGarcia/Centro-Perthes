@@ -3,9 +3,11 @@
     <form id="form">
 
         <h1>Semáforo del Perthes</h1>
-        <h5>El semáforo es orientativo. Para consejo individualizado llámenos.</h5>
-
+        <h5>Rellena el cuestionario para conocer el riesgo de tu cadera</h5>
+        
         <h3>1. VALORACION CLINICA</h3>
+        **Añadir imagen de una valoracion clinica en ambas pregunta en el lado izquierdo.<br> 
+        Que las preguntas vayan apareciendo segun van respondiendo**
 
         <div class="flex-container">
             <section class="section1">
@@ -20,7 +22,7 @@
                 </div>
             </section>
             <section class="section1">
-                <h5 for="movilidad">Movilidad. ¿Tiene una apertura de menos de 30º?</h5>
+                <h5 for="movilidad">Movilidad ¿Abre la pierna menos de 30º?</h5>
                 <div class="">
                     <input class="option" type="radio" name="movilidad" id="movilidadSi" value="8">
                     <label for="movilidadSi">Sí</label>
@@ -101,7 +103,7 @@
             </section>
 
             <section class="section2">
-                <h4>SIGNO DE CAGE</h4>
+                <h4>SIGNO DE GAGE</h4>
                 <p for="cage"><img src="@/assets/img/EFfotosSemaforo/EFSignoCage.png" alt=""></p>
                 <div class="">
                     <input class="option" type="radio" name="cage" id="cageSi" value="5">
@@ -121,15 +123,33 @@
         </div>
 
         <button type="button" @click.prevent="showResult()">Ver resultado</button>
-
     </form>
+
+
 
     <div v-if="isSubmit" class="response">
         <h4 id="answer" class="answer">Las respuestas recogidas en el test indican que la cadera {{totalPoints >= 55 ? 'presenta síntomas de evolución de riesgo.' : totalPoints >= 35 && totalPoints < 55 ? 'no tiene riesgo actual' : 'no tiene riesgo actual.'}}</h4>
-        <img v-if="totalPoints <= 35" src="../../assets/img/trafficLights/greenLight.png" id="image">
-        <img v-if="totalPoints > 35 && totalPoints < 55" src="../../assets/img/trafficLights/orangeLight.png" id="image">
-        <img v-if="totalPoints >= 55" src="../../assets/img/trafficLights/redLight.png" id="image"/>
+        <img v-if="totalPoints <= 35" src="../../assets/lights/3.png" id="image">
+        <img v-if="totalPoints > 35 && totalPoints < 55" src="../../assets/lights/2.png" id="image">
+        <img v-if="totalPoints >= 55" src="../../assets/lights/1.png" id="image"/>
     </div>
+    <h5>El semáforo es orientativo. Para consejo individualizado contacta con nosotros.</h5>
+    <p>Para consejo individualizado pincha aquí <a href="mailto:perthes.cip@gmail.com" target="_blank"> <ion-icon name="mail-outline"></ion-icon> </a> *Icono más grande*</p>
+<br><br><br>
+<p>6 IMPULSOS EN LA ENFERMEDAD DE PERTHES</p>
+<ol>
+    <li>Comuncicación y accesibilidad</li>
+    <li>Confort y privacidad</li>
+    <li>Valoración multidisciplinar del caso</li>
+    <li>Capacitación de las familias</li>
+    <li>Humanización de la atención</li>
+    <li>Sensibilización de la sociedad</li>
+</ol>
+<p>Suscribete a la newsletter</p>
+
+<!-- En adelante pensar en hacer una sección privada donde se puedan registrar y suscribir para tener más información -->
+
+
 
 </template>
 
@@ -137,6 +157,7 @@
 
 export default {
     name: 'EFsemaforo',
+    
 
     data() {
         return {
@@ -213,12 +234,9 @@ h4 {
     margin: 2rem 0 0.5rem;
 }
 
-/* input.ovalizacion,.aplastamiento {
-    appearance: none;
-} */
 
 input {
-    appearance: none;
+    /* appearance: none; */
     font-size: 2rem;
     color: red;
 }
@@ -266,4 +284,5 @@ button {
     padding: 1rem 2.5rem;
     border-radius: 10rem;
     font-size: 1.3rem;
+}
 </style>
