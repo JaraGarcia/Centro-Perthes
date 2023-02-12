@@ -1,27 +1,27 @@
 <template>
-      <nav>
+      <nav v-click-outside="closeMenu">
         <div class="dropBtn">
             <button @click="toggleVisibility" class="dropBtn"> <ion-icon name="menu-outline"></ion-icon> </button>
                 <div v-show="isVisible" id="dropD" class="dropDwn-content" >
-                  <RouterLink class="dropBtn" to="/Enfermedad_Perthes">Enfermedad del Perthes ➤</RouterLink>
-                  <div class="dropDwn-content doublenav">  
-                    <RouterLink to="/diagnostico">Diagnóstico</RouterLink>
-                    <RouterLink to="/pronostico">Pronóstico</RouterLink>
-                    <RouterLink to="/tratamiento">Tratamiento</RouterLink>
+                  <RouterLink class="dropBtn" @click="closeMenu" to="/Enfermedad_Perthes">Enfermedad del Perthes ➤</RouterLink>
+                  <div class="dropDwn-content doublenav">
+                    <RouterLink @click="closeMenu" to="/diagnostico">Diagnóstico</RouterLink>
+                    <RouterLink @click="closeMenu" to="/pronostico">Pronóstico</RouterLink>
+                    <RouterLink @click="closeMenu" to="/tratamiento">Tratamiento</RouterLink>
                   </div>
-                    <RouterLink to="/EscuelaFamilias">Escuela de familias</RouterLink>
-                    <RouterLink to="/Eventos">Eventos</RouterLink>
-                    <RouterLink to="/AboutUs">El equipo</RouterLink>
-                    <RouterLink to="/IDI">I+D+i</RouterLink>
-                    
+                    <RouterLink @click="closeMenu" to="/EscuelaFamilias">Escuela de familias</RouterLink>
+                    <RouterLink @click="closeMenu" to="/Eventos">Eventos</RouterLink>
+                    <RouterLink @click="closeMenu" to="/AboutUs">El equipo</RouterLink>
+                    <RouterLink @click="closeMenu" to="/IDI">I+D+i</RouterLink>
+
                 </div>
         </div>
-                <ul class="rrss">
-                  <li><a href="mailto:perthes.cip@gmail.com" target="_blank"> <ion-icon name="mail-outline"></ion-icon> </a> </li>
-                  <li><a href="tel:+34683331024"> <ion-icon name="call-outline"></ion-icon> </a> </li>
-                  <li><a href="https://twitter.com/centrodeperthes" target="_blank"> <ion-icon name="logo-twitter"></ion-icon> </a> </li>
-                  <li><a href="https://www.linkedin.com/in/centro-internacional-del-perthes-b94124252/" target="_blank"> <ion-icon name="logo-linkedin"></ion-icon> </a> </li>
-              </ul>
+        <ul class="rrss">
+          <li><a href="mailto:perthes.cip@gmail.com" target="_blank"> <ion-icon name="mail-outline"></ion-icon> </a> </li>
+          <li><a href="tel:+34683331024"> <ion-icon name="call-outline"></ion-icon> </a> </li>
+          <li><a href="https://twitter.com/centrodeperthes" target="_blank"> <ion-icon name="logo-twitter"></ion-icon> </a> </li>
+          <li><a href="https://www.linkedin.com/in/centro-internacional-del-perthes-b94124252/" target="_blank"> <ion-icon name="logo-linkedin"></ion-icon> </a> </li>
+      </ul>
     </nav>
 </template>
 
@@ -30,7 +30,7 @@
 
 export default {
     name: 'LandingNavBar',
- 
+
     data(){
       return{
         isVisible: false,
