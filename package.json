@@ -14,12 +14,13 @@
     "axios": "^1.1.3",
     "bootstrap": "^5.2.2",
     "core-js": "^3.8.3",
+    "firebase": "^9.17.1",
     "ionicons": "^6.0.3",
     "node-modules": "^1.0.1",
     "querystring": "^0.2.1",
     "vue": "^3.2.13",
-    "vue-mailchimp-email-signup-form": "^1.1.2",
     "vue-add-events-to-google-calendar": "^0.0.2",
+    "vue-mailchimp-email-signup-form": "^1.1.2",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {

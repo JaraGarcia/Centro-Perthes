@@ -17,8 +17,10 @@
 import LandingTitle from './components/LandingPage/LandingTitle.vue';
 import LandingNavBar from './components/LandingPage/LandingNavBar.vue';
 import FooterPlace from  './components/FooterPlace.vue';
+
 export default {
   name: 'App',
+
   components: {
     LandingTitle,
     LandingNavBar,
