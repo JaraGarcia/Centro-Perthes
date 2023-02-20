@@ -82,6 +82,7 @@ nav .dropBtn {
   color: #fff;
   border: none;
   cursor: pointer;
+  margin-left: 1%;
 }
 nav .dropBtn .show {
   display: block !important;
@@ -91,13 +92,13 @@ nav .dropBtn .dropDwn {
   display: inline-block;
 }
 nav .dropBtn .dropDwn-content {
-
   position: absolute;
   background-color: #fff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+
 nav .dropBtn .dropDwn-content a {
   color: black;
   padding: 12px 16px;

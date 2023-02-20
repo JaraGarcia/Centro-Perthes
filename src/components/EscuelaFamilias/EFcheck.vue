@@ -80,11 +80,14 @@ export default {
 </script>
 
 <style scoped>
-
+h1{
+  margin-top: 2vw;
+}
 .form {
   max-width: 750px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  margin-bottom: 0.5vw;
 }
 .formSteps {
   display: flex;
@@ -140,14 +143,11 @@ h6 {
     font-size: 1.7rem;
 }
 
-
-
 img {
     width: 200px;
     margin: 0.5rem;
 }
 
-label,
 .option {
     font-size: 1.2rem;
     margin-left: 0.6rem;

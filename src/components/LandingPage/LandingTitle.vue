@@ -28,23 +28,25 @@ header {
   justify-content: space-between;
   padding: 8px 0px;
 }
+
 header img{
   width: 6vw;
   height: auto;
 }
+
 header p {
   font-size: 3.5vw;
   letter-spacing: 2px;
   display: inline;
   font-weight: 500;
   color: #045ca4;
-  
 }
 
 .subtitle{
   margin-top: 10px;
   color: hwb(215 17% 49%); 
 }
+
 .subtitle p{
     display: flex;
     justify-content: end;

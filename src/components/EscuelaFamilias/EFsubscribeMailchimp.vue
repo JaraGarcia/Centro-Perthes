@@ -49,17 +49,12 @@ export default {
 </script>
 <style scoped>
 
-*{
-  margin: 1vw 5vw;
+h5, input, div{
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-bottom: 0.5vw;
 }
 
-h5{
-  margin-top: 7vw;
-}
-
-input{
-  width: 200px;
-}
 
 button {
   border: transparent;

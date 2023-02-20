@@ -51,11 +51,12 @@ li {
     border: 1px solid;
     padding: 10px;
     box-shadow: 5px 10px;
+    font-size: 85%;
 }
 
-/* img {
+img {
   width: 70%;
  
-} */
+}
 
 </style>
