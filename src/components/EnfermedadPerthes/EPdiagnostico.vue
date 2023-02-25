@@ -7,7 +7,7 @@
                 <li>Radiografía simple de cadera</li>
                 <li>Resonancia Magnética Nuclear</li>
             </ul>
-        <p>Las alteraciones dela cadera en las imagenes pueden tardar unas semanas en aparecer. Es probable que se recomiende repetir alguna prueba.</p>
+        <p>Las alteraciones de la cadera en las imagenes pueden tardar unas semanas en aparecer. Es probable que se recomiende repetir alguna prueba.</p>
         <p>Atención sin distancias, solicita una cita ahora.</p>
         <br>
 <p class="subtitle">Fases de la enfermedad</p>

@@ -12,7 +12,7 @@
 <p class="subtitle">Quirúrgico</p>
 <p>En ocasiones puede necesitarse una corrección quirúrgica, para:</p>
 <ul>
-    <li>Mantener la cabeza femoral dentro de la cabidad que la contiene</li>
+    <li>Mantener la cabeza femoral dentro de la cavidad que la contiene</li>
     <li>Evitar las deformidades irreversibles</li>
     <li>Mejorar la forma esférica de la cabeza femoral</li>
     <li>Mejorar la fuerza muscular</li>

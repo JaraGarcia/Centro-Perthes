@@ -77,15 +77,16 @@ nav a {
   letter-spacing: 2px;
 }
 nav .dropBtn {
-  font-size: x-large;
   background-color: #A3B5C0;
   color: #fff;
   border: none;
   cursor: pointer;
   margin-left: 1%;
+  
 }
 nav .dropBtn .show {
   display: block !important;
+  
 }
 nav .dropBtn .dropDwn {
   position: relative;
@@ -101,11 +102,14 @@ nav .dropBtn .dropDwn-content {
 
 nav .dropBtn .dropDwn-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 12px 18px;
+  margin: 0;
   font-size: large;
   text-decoration: none;
   display: block;
+  font-size: medium;
 }
+
 nav .dropBtn .dropDwn-content a:hover {
   background-color: #ddd;
 }

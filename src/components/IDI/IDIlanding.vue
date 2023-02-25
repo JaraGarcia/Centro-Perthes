@@ -1,11 +1,11 @@
 <template>
     <h1>CUANDO NECESITAS AYUDA:</h1>
-    <h2>En CIP se invrstigan y generan nuevos conocimientos que aplicamos en los tratamientos</h2>
+    <h2>En CIP se investigan y generan nuevos conocimientos que aplicamos en los tratamientos</h2>
 
 <p>LÍNEAS DE INVESTIGACIÓN</p>
     <ul>
-        <li>Nuevas tecnilogías en tratamientos quirúrgicos no invasivos</li>
-        <li>Optimización de la anatomía esférica d ela cabeza femoral</li>
+        <li>Nuevas tecnologías en tratamientos quirúrgicos no invasivos</li>
+        <li>Optimización de la anatomía esférica de la cabeza femoral</li>
         <li>Tecnologías 3D en la mejora de intervenciones quirurgicas</li>
         <li>Efectividad de las intervenciones y resultados a largo plazo</li>
     </ul>
