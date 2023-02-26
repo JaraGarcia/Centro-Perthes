@@ -12,8 +12,6 @@
       <h5>{{activeQuestion.title}}</h5>
       <p>{{activeQuestion.subtitle}}</p>
      
-      
-      
       <ul class="options">
        
         <li @click="selectOption(index, option.value)" v-for="(option, index) in activeQuestion.options" :key="index">
@@ -33,12 +31,12 @@
             <h4 id="answer"></h4>
             <img :src='URLimage' id="image">
   </div>
-  <div v-if="isSubmit" class="response">
-        <h4 id="answer" class="answer">Las respuestas recogidas en el test indican que la cadera {{totalPoints >= 55 ? 'presenta síntomas de evolución de riesgo.' : totalPoints >= 35 && totalPoints < 55 ? 'no tiene riesgo actual' : 'no tiene riesgo actual.'}}</h4>
-        <img v-if="totalPoints <= 35" src="../../assets/lights/3.png" id="image">
-        <img v-if="totalPoints > 35 && totalPoints < 55" src="../../assets/lights/2.png" id="image">
-        <img v-if="totalPoints >= 55" src="../../assets/lights/1.png" id="image"/>
-    </div>
+
+  <div>
+    <h5 class="form" style="color: red;"> {{logMessage}}</h5>
+    <!-- <img v-bind:src="logImageSrc"> -->
+  </div>
+
 </template>
 
 <script>
@@ -51,13 +49,24 @@ export default {
   data () {
     return {
       step: 0,
-      answers: []
+      answers: [],
+      logMessage: '',
     }
   },
   computed: {
     activeQuestion() {
       return this.form[this.step]
-    }
+    },
+    // logImageSrc() {
+    // if (this.logMessage === 'No riesgo') {
+    //   return '../../assets/lights/3.png';
+    // } else if (this.logMessage === 'Moderado') {
+    //   return '../../assets/lights/2.png';
+    // } else if (this.logMessage === 'Grave') {
+    //   return '../../assets/lights/1.png';
+    // } else {
+    //   return '';
+    // }
   },
   methods: {
     selectOption: function (index, value) {
@@ -69,13 +78,20 @@ export default {
     },
     incrementStep: function () {
       if(this.step === this.form.length - 1) {
-        console.log([...this.answers].reduce((a,b) => a + b.value, 0))
+        const totalPoints =[...this.answers].reduce((a,b) => typeof b.value === 'number' ? a + b.value: a, 0);
+        if (totalPoints <= 35){
+          this.logMessage ='No riesgo';
+        }else if(totalPoints > 35 && totalPoints < 55){ 
+          this.logMessage = 'Moderado';
+        }else if (totalPoints >= 55){
+          this.logMessage ='Grave';
+        }
         return;
       }
       this.step++;
     }
   }
-}
+};
 
 </script>
 
