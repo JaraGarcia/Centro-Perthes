@@ -33,8 +33,8 @@
   </div>
 
   <div>
-    <h5 class="form" style="color: red;"> {{logMessage}}</h5>
-    <!-- <img v-bind:src="logImageSrc"> -->
+    <h5 class="form"> {{logMessage}}</h5>
+    <img :src='logImageSrc'>
   </div>
 
 </template>
@@ -59,14 +59,14 @@ export default {
     },
     // logImageSrc() {
     // if (this.logMessage === 'No riesgo') {
-    //   return '../../assets/lights/3.png';
+    //   return '/lights/3.png';
     // } else if (this.logMessage === 'Moderado') {
-    //   return '../../assets/lights/2.png';
+    //   return '/lights/2.png';
     // } else if (this.logMessage === 'Grave') {
-    //   return '../../assets/lights/1.png';
+    //   return '/assets/lights/1.png';
     // } else {
     //   return '';
-    // }
+    // }}
   },
   methods: {
     selectOption: function (index, value) {
@@ -80,11 +80,14 @@ export default {
       if(this.step === this.form.length - 1) {
         const totalPoints =[...this.answers].reduce((a,b) => typeof b.value === 'number' ? a + b.value: a, 0);
         if (totalPoints <= 35){
-          this.logMessage ='No riesgo';
+          this.logMessage ='No presenta riesgo';
+          this.logImageSrc = require('@/assets/lights/3.png')
         }else if(totalPoints > 35 && totalPoints < 55){ 
-          this.logMessage = 'Moderado';
+          this.logMessage = 'Presenta un riesgo Moderado. Haga seguimiento con un especialista';
+          this.logImageSrc = require('@/assets/lights/2.png');
         }else if (totalPoints >= 55){
-          this.logMessage ='Grave';
+          this.logMessage ='Presenta riesgo Grave. Contacte con un especialista.';
+          this.logImageSrc = require('@/assets/lights/1.png');
         }
         return;
       }
